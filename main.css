@@ -236,9 +236,6 @@ footer .social-media li {
     margin-bottom: 20px; } }
 /*when the top nav button moves*/
 @media only screen and (max-width: 609px) {
-  #topnav-row, #guided-row, #onboard-row {
-    background-color: pink; }
-
   #topnav-row img {
     display: none; }
   #topnav-row .topnav-right {
