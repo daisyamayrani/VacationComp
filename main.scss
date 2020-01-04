@@ -45,6 +45,7 @@ body {
           background: $yellow;
           font-size: 12px;
           padding: 8px 12px;
+          text-shadow: 1px 1px grey;
         }
       } //end of topnav-right
     } //end topnav-row
@@ -66,18 +67,21 @@ body {
       h4 {
         font-size: 15px;
         letter-spacing: 3.5px;
+        text-shadow: 1px 1px grey;
       }
       h1 {
         font-size: 5rem;
         text-transform: uppercase;
         letter-spacing: 6px;
         margin: auto;
+        text-shadow: 2px 2px grey;
       }
       button {
         color: white;
         background: $yellow;
-        font-size: 13px;
+        font-size: 17px;
         padding: 7px 13px;
+        text-shadow: 1px 1px grey;
       }
     } // end text-area
   } // end atmo-image-row
@@ -88,6 +92,7 @@ body {
     h2 {
       color: $yellow;
       font-size: 2.9rem;
+      text-shadow: 1px 1px grey;
       margin-bottom: 15px;
       letter-spacing: 3px;
       text-transform: uppercase;
@@ -135,6 +140,7 @@ body {
             letter-spacing: .8px;
             font-size: 10px;
             margin-bottom: 6px;
+            text-shadow: 0.5px 0.5px grey;
           }
           h3 {
             color: $yellow;
@@ -143,6 +149,7 @@ body {
             margin-top: 6px;
             margin-bottom: 18px;
             text-transform: uppercase;
+            text-shadow: 0.5px 0.5px grey;
           }
         } // end text-area
       } // end img-container
@@ -197,6 +204,7 @@ body {
     h2 {
       color: $yellow;
       font-size: 2.9rem;
+      text-shadow: 1px 1px grey;
       margin-bottom: 15px;
       letter-spacing: 3px;
       text-transform: uppercase;
