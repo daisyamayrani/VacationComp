@@ -58,6 +58,7 @@ body {
     img {
       width: 100%;
       height: 93vh;
+      object-fit: cover;
     }
     .text-area {
       position: absolute;
@@ -75,11 +76,13 @@ body {
         letter-spacing: 6px;
         margin: auto;
         text-shadow: 2px 2px grey;
+        width: auto;
       }
       button {
         color: white;
         background: $yellow;
-        font-size: 17px;
+        font-size: 20px;
+        font-style: italic;
         padding: 7px 13px;
         text-shadow: 1px 1px grey;
       }
@@ -201,6 +204,7 @@ body {
     text-align: center;
     margin: 49px auto 62px auto;
     height: auto;
+
     h2 {
       color: $yellow;
       font-size: 2.9rem;
@@ -218,25 +222,19 @@ body {
     }
   } // end onboard-row
   #boat-images-row {
-    padding-bottom: 100px;
-    .row {
-      .col-md-2 {
-        padding: 0;
-        .col-md-12 {
-          text-align: center;
-          padding:0;
-          width: 200px;
-          height: 200px;
-          margin-left: auto;
-          margin-right: auto;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            -webkit-box-shadow: 10px 10px 24px -8px rgba(60,125,143,1);
-            -moz-box-shadow: 10px 10px 24px -8px rgba(60,125,143,1);
-            box-shadow: 10px 10px 24px -8px rgba(60,125,143,1);
-          }
+
+    .img-area {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .single-img {
+        padding: 0 50px 50px;
+        .icons {
+          height: 300px;
+          width: 300px;
         }
       }
     }
@@ -336,18 +334,7 @@ footer {
     }
   }
   #boat-images-row{
-    .navbar {
 
-      .col-md-12 {
-        padding: 0;
-        width: 500px !important;
-        height: 300px !important;
-        margin-bottom: 20px;
-        .icons {
-
-        }
-      }
-    }
   }
 }
 
@@ -357,19 +344,50 @@ footer {
     // background-color: pink;
   }
   #topnav-row {
-    img {
-      display: none;
-    }
-    .topnav-right {
-      align-items: center;
-      margin-top: auto;
-      margin-bottom: auto;
-       a {
-        display: inline;
-        font-size: 24px;
+    // img {
+    //   display: none;
+    // }
+    // .topnav-right {
+    //   display: block;
+    //   align-items: center;
+    //   margin-right: 0px !important;
+    //   margin-left: 0 !important;
+    //   a {
+    //     padding: 0;
+    //     width: 100%;
+    //     margin: auto!important;
+    //     font-size: 26px;
+    //   }
+    //
+    // }
+  }
+  #image-row{
+    width: 100%;
+    h1 {
+      font-size: 3rem !important;
 
-      }
+    }
+    button {
+      color: white;
+      background: $yellow;
+      font-size: 20px;
+      font-style: italic;
+      padding: 7px 13px;
+      text-shadow: 1px 1px grey;
     }
   }
-  //add a burger menu
+  #boat-images-row {
+    .img-area {
+
+
+      .single-img {
+        padding: 0 10px 10px !important;
+        .icons {
+          height: 300px;
+          width: 300px;
+        }
+      }
+    }
+  } // end boat-images-row
+
 }
