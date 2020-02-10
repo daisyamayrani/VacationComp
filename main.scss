@@ -231,10 +231,14 @@ body {
       justify-content: center;
 
       .single-img {
-        padding: 0 50px 50px;
+        padding: 10px 50px 50px;
+
         .icons {
           height: 300px;
           width: 300px;
+          -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+          -moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+          box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
         }
       }
     }
@@ -244,18 +248,14 @@ body {
 
 
 footer {
-	background: $darkGrey;
-	padding: 30px 0;
+  background: $darkGrey;
+	padding-top: 25px;
+  padding-bottom: 10px;
 	text-align: center;
 	color: white;
-
-}
-
-
-
-footer {
   .menu {
   	margin-bottom: 20px;
+    // padding-left: 0px;
     li {
     	display: inline-block;
     	padding: 10px 20px;
@@ -271,17 +271,10 @@ footer {
 }
 
 
-
-footer{
-  p {
-  	font-size: 0.8rem;
-  	font-weight: 300;
-  	margin-bottom: 40px;
-  }
-}
-
 footer {
   .social-media {
+    padding-bottom: 30px;
+    padding-left: 0px;
     li {
     	display: inline-block;
     	padding: 0 10px;
@@ -293,6 +286,15 @@ footer {
     }
   }
 }
+
+footer{
+  p {
+  	font-size: 0.8rem;
+  	font-weight: 300;
+  }
+}
+
+
 
 /* Desktop and all screens bigger than that */
 @media only screen and (min-width: 1425px) {
@@ -344,23 +346,37 @@ footer {
     // background-color: pink;
   }
   #topnav-row {
-    // img {
-    //   display: none;
-    // }
-    // .topnav-right {
-    //   display: block;
-    //   align-items: center;
-    //   margin-right: 0px !important;
-    //   margin-left: 0 !important;
-    //   a {
-    //     padding: 0;
-    //     width: 100%;
-    //     margin: auto!important;
-    //     font-size: 26px;
-    //   }
-    //
-    // }
+    margin-right: auto !important;
+    margin-left: auto !important;
+    img {
+      display: none;
+    }
+    .topnav-right {
+      margin-right: auto !important;
+      margin-left: auto !important;
+      a {
+        font-size: 11px !important;
+      }
+      a:nth-child(5) {
+        display: none !important;
+        button {
+          display: none !important;
+
+        }
+      }
+    }
   }
+
+  #image-row {
+
+    .text-area {
+
+      h1 {
+
+      }
+    }
+  }
+
   #image-row{
     width: 100%;
     h1 {
@@ -376,15 +392,31 @@ footer {
       text-shadow: 1px 1px grey;
     }
   }
+
+  #onboard-row {
+    h2 {
+      font-size: 35px !important;
+    }
+  }
+
   #boat-images-row {
+    margin-left: auto !important;
+    margin-right: auto !important;
     .img-area {
+      display: block;
+      align-items: center;
+      margin-left: auto !important;
+      margin-right: auto !important;
 
 
       .single-img {
-        padding: 0 10px 10px !important;
+        padding: 5px 5px 30px 5px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
         .icons {
-          height: 300px;
-          width: 300px;
+          width: 200px !important;
+          height: 200px !important;
         }
       }
     }

@@ -189,41 +189,46 @@ body {
     align-items: center;
     justify-content: center; }
     body #boat-images-row .img-area .single-img {
-      padding: 0 50px 50px; }
+      padding: 10px 50px 50px; }
       body #boat-images-row .img-area .single-img .icons {
         height: 300px;
-        width: 300px; }
+        width: 300px;
+        -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
+        box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57); }
 
 footer {
   background: #838383;
-  padding: 30px 0;
+  padding-top: 25px;
+  padding-bottom: 10px;
   text-align: center;
   color: white; }
+  footer .menu {
+    margin-bottom: 20px; }
+    footer .menu li {
+      display: inline-block;
+      padding: 10px 20px; }
+      footer .menu li a {
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.8rem; }
 
-footer .menu {
-  margin-bottom: 20px; }
-  footer .menu li {
+footer .social-media {
+  padding-bottom: 30px;
+  padding-left: 0px; }
+  footer .social-media li {
     display: inline-block;
-    padding: 10px 20px; }
-    footer .menu li a {
-      font-weight: 600;
+    padding: 0 10px; }
+    footer .social-media li a {
       color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 0.8rem; }
+      font-size: 2rem;
+      opacity: .5; }
 
 footer p {
   font-size: 0.8rem;
-  font-weight: 300;
-  margin-bottom: 40px; }
-
-footer .social-media li {
-  display: inline-block;
-  padding: 0 10px; }
-  footer .social-media li a {
-    color: white;
-    font-size: 2rem;
-    opacity: .5; }
+  font-weight: 300; }
 
 /* Desktop and all screens bigger than that */
 /* laptop devices */
@@ -234,6 +239,21 @@ footer .social-media li {
     display: none; } }
 /*when the top nav button moves*/
 @media only screen and (max-width: 609px) {
+  #topnav-row {
+    margin-right: auto !important;
+    margin-left: auto !important; }
+    #topnav-row img {
+      display: none; }
+    #topnav-row .topnav-right {
+      margin-right: auto !important;
+      margin-left: auto !important; }
+      #topnav-row .topnav-right a {
+        font-size: 11px !important; }
+      #topnav-row .topnav-right a:nth-child(5) {
+        display: none !important; }
+        #topnav-row .topnav-right a:nth-child(5) button {
+          display: none !important; }
+
   #image-row {
     width: 100%; }
     #image-row h1 {
@@ -246,10 +266,23 @@ footer .social-media li {
       padding: 7px 13px;
       text-shadow: 1px 1px grey; }
 
-  #boat-images-row .img-area .single-img {
-    padding: 0 10px 10px !important; }
-    #boat-images-row .img-area .single-img .icons {
-      height: 300px;
-      width: 300px; } }
+  #onboard-row h2 {
+    font-size: 35px !important; }
+
+  #boat-images-row {
+    margin-left: auto !important;
+    margin-right: auto !important; }
+    #boat-images-row .img-area {
+      display: block;
+      align-items: center;
+      margin-left: auto !important;
+      margin-right: auto !important; }
+      #boat-images-row .img-area .single-img {
+        padding: 5px 5px 30px 5px !important;
+        margin-left: auto !important;
+        margin-right: auto !important; }
+        #boat-images-row .img-area .single-img .icons {
+          width: 200px !important;
+          height: 200px !important; } }
 
 /*# sourceMappingURL=main.css.map */
