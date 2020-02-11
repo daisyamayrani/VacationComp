@@ -49,6 +49,8 @@ body {
         }
       } //end of topnav-right
     } //end topnav-row
+
+
   #image-row {
     width: 100%;
     height: 100%;
@@ -88,6 +90,7 @@ body {
       }
     } // end text-area
   } // end atmo-image-row
+
   #guided-row {
     width: 100%;
     text-align: center;
@@ -108,42 +111,39 @@ body {
       line-height: 1.6;
     }
   } // end guided-row
+
   #pic-link-row {
     margin: 0;
     padding: 0;
     width: 100%;
-    .navbar {
-      margin: 0;
-      width: 100%;
-      display: inline-block;
-      position: relative;
-      text-align: center;
-      color: white;
-      height: auto;
-      padding: 0 !important;
-      .img-container {
-        float: left;
-        width: 33.33%;
-        margin: 0;
-        text-align: center;
+    position: relative;
+    .img-area {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      .single-img {
+        padding: 10px 50px 50px;
         position: relative;
-        text-align: left;
-        color: blue;
-        height: auto;
         .icons {
-          height: 500px;
-          width: 100%;
+          height: 450px;
+          width: 450px;
+          -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+          -moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+          box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+          position: relative;
         } // end icons
         .text-area {
           position: absolute;
-          bottom: 8px;
-          left: 16px;
+          bottom: 50px;
+          left: 70px;
           h5 {
             color: white;
             letter-spacing: .8px;
-            font-size: 10px;
+            font-size: 14px;
             margin-bottom: 6px;
-            text-shadow: 0.5px 0.5px grey;
+            text-shadow: 1px 1px grey;
           }
           h3 {
             color: $yellow;
@@ -152,53 +152,13 @@ body {
             margin-top: 6px;
             margin-bottom: 18px;
             text-transform: uppercase;
-            text-shadow: 0.5px 0.5px grey;
+            text-shadow: 1px 1px grey;
           }
         } // end text-area
       } // end img-container
-      .arrow-nav {
-        z-index: 4;
-        color: white;
-        position: absolute;
-        top: 0;
-        left: 0px;
-        font-size: 25px;
-        .fa-angle-right {
-          padding-left: 20px;
-          background: $yellow;
-          padding: 10px 20px 10px 10px;
-        }
-        .fa-angle-left {
-          padding-right: 20px;
-          background: $greenYellow;
-          padding: 10px 20px 10px 10px;
-        }
-      }
-      .search-circle {
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        margin: auto;
-        padding: 20px;
-        color: white;
-        background: $yellow;
-        border: 3px solid $greenYellow;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 3;
-        .fa-search-plus {
-          text-align: center;
-          font-size: 23px;
-          font-weight: bold;
-          position: relative;
-          top: -11px;
-          left: -12px;
-        }
-      }
     } // end navbar
   } //end pic-link-row
+
   #onboard-row {
     width: 100%;
     text-align: center;
@@ -221,8 +181,8 @@ body {
       line-height: 1.6;
     }
   } // end onboard-row
-  #boat-images-row {
 
+  #boat-images-row {
     .img-area {
       display: flex;
       flex-wrap: wrap;
@@ -243,6 +203,8 @@ body {
       }
     }
   } // end boat-images-row
+
+
 } // end body
 
 
@@ -254,11 +216,10 @@ footer {
 	text-align: center;
 	color: white;
   .menu {
-  	margin-bottom: 20px;
-    // padding-left: 0px;
+  	padding-inline-start: 0px;
     li {
     	display: inline-block;
-    	padding: 10px 20px;
+    	padding: 20px;
       a {
       	font-weight: 600;
       	color: white;
@@ -268,26 +229,20 @@ footer {
       }
     }
   }
-}
-
-
-footer {
   .social-media {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-left: 0px;
     li {
     	display: inline-block;
-    	padding: 0 10px;
+      padding: 0 10px;
       a {
+        padding: 2px;
       	color: white;
       	font-size: 2rem;
       	opacity: .5;
       }
     }
   }
-}
-
-footer{
   p {
   	font-size: 0.8rem;
   	font-weight: 300;
@@ -298,53 +253,33 @@ footer{
 
 /* Desktop and all screens bigger than that */
 @media only screen and (min-width: 1425px) {
-  // #topnav-row, #guided-row, #onboard-row {
-  //   background-color: green;
-  // }
-  //
+
 }
 
 /* laptop devices */
 @media only screen and (max-width: 1425px) {
-  // #topnav-row, #guided-row, #onboard-row {
-  //   background-color: blue;
-  // }
-  //make the images one on top of the other in NAVBAR
+
+
 }
 
 /* tablet devices */
 @media only screen and (max-width: 1023px) {
-  // #topnav-row, #guided-row, #onboard-row {
-  //   background-color: red;
-  // }
-  #boat-images-row{
 
-  }
+
 }
 
 /* mobile devices */
 @media only screen and (max-width: 769px) {
-  // #topnav-row, #guided-row, #onboard-row {
-  //   background-color: yellow;
-  // }
   #topnav-row {
     img {
       display: none;
     }
-    .topnav-right {
-      //code to maje menu get centered
-    }
-  }
-  #boat-images-row{
-
   }
 }
 
 /*when the top nav button moves*/
 @media only screen and (max-width: 609px) {
-  #topnav-row, #guided-row, #onboard-row {
-    // background-color: pink;
-  }
+
   #topnav-row {
     margin-right: auto !important;
     margin-left: auto !important;
@@ -367,21 +302,10 @@ footer{
     }
   }
 
-  #image-row {
-
-    .text-area {
-
-      h1 {
-
-      }
-    }
-  }
-
   #image-row{
     width: 100%;
     h1 {
       font-size: 3rem !important;
-
     }
     button {
       color: white;
@@ -392,6 +316,31 @@ footer{
       text-shadow: 1px 1px grey;
     }
   }
+
+  #pic-link-row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    .img-area {
+      display: block;
+      align-items: center;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      .single-img {
+        padding: 5px 5px 30px 5px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        .icons {
+          width: 300px !important;
+          height: 400px !important;
+        }
+        .text-area {
+          position: absolute;
+          bottom: 35px !important;
+          left: 37px !important;
+        }
+      }
+    }
+  } //end pic-link-row
 
   #onboard-row {
     h2 {
@@ -407,13 +356,10 @@ footer{
       align-items: center;
       margin-left: auto !important;
       margin-right: auto !important;
-
-
       .single-img {
         padding: 5px 5px 30px 5px !important;
         margin-left: auto !important;
         margin-right: auto !important;
-
         .icons {
           width: 200px !important;
           height: 200px !important;
