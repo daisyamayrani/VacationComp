@@ -5,13 +5,94 @@ $bgPurple: #BA36DB;
 $black : #323232;
 $paraGrey: #A4A4A4;
 $darkGrey: #838383;
+$skyDarkBlue: #004C66;
 $greenYellow: #cdad00;
+
+html {
+  padding: 0 !important;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  width: auto;
+  width: 100%;
+  padding: 0 !important;
+//Basic styling for repeated tags
+  .headerStyle {
+    // background: rgb(89,146,179);
+    // background: linear-gradient(107deg, rgba(89,146,179,1) 0%, rgba(70,121,195,1) 60%, rgba(30,136,57,1) 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  h2 {
+    color: $yellow;
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px grey;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 2rem;
+    color: $skyDarkBlue;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: auto;
+    text-shadow: 1px 1px grey;
+    width: auto;
+  }
+  p {
+    color: $paraGrey;
+    margin: auto;
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  button {
+    color: white;
+    background: $yellow;
+    text-shadow: 1px 1px $black;
+    font-size: 20px;
+    font-style: italic;
+    padding: 7px 13px;
+    display: block;
+    align-items: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 20px;
+    border: 1px solid $darkGrey;
+    -webkit-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+    -moz-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+    box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+
+    &:link {
+      color: white;
+    }
+    &:visited {
+      color: $greenYellow;
+    }
+    &:hover {
+      color: white;
+      background-color: $skyDarkBlue;
+      font-size: 22px;
+      padding: 7px 15px;
+    }
+    &:active {
+      color: $black;
+    }
+  }
+
+
+//End basic styling for repeated tags
+
+
+
   #topnav-row {
     position: relative;
     box-sizing: border-box;
@@ -22,11 +103,12 @@ body {
     padding: 8px 0;
     text-align: right;
     img {
-      width: 70px;
-      height: 70px;
+      width: 90px;
+      height: 90px;
       object-fit: contain;
       float: left;
       padding-left: 20px;
+      padding-bottom: 10px;
       margin-left: 40px;
       }
       .topnav-right {
@@ -39,6 +121,19 @@ body {
           text-decoration: none;
           font-size: 15px;
           height: auto;
+          &:link {
+            color: $black;
+          }
+          &:visited {
+            color: $black;
+          }
+          &:hover {
+            color: $darkGrey;
+            font-style: italic;
+          }
+          &:active {
+            color: $black;
+          }
         }
         a button {
           color: white;
@@ -46,20 +141,37 @@ body {
           font-size: 12px;
           padding: 8px 12px;
           text-shadow: 1px 1px grey;
+          border: 1px solid $darkGrey;
+          -webkit-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+          -moz-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+          box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+          &:link {
+            color: white;
+          }
+          &:visited {
+            color: $greenYellow;
+          }
+          &:hover {
+            color: white;
+            background-color: $skyDarkBlue;
+          }
+          &:active {
+            color: $black;
+          }
+
         }
       } //end of topnav-right
     } //end topnav-row
 
-
   #image-row {
     width: 100%;
-    height: 100%;
+    height: auto;
     position: relative;
     text-align: center;
     color: white;
     img {
       width: 100%;
-      height: 93vh;
+      height: 800px;
       object-fit: cover;
     }
     .text-area {
@@ -70,46 +182,30 @@ body {
       h4 {
         font-size: 15px;
         letter-spacing: 3.5px;
-        text-shadow: 1px 1px grey;
+        text-shadow: 1px 1px $black;
       }
       h1 {
         font-size: 5rem;
         text-transform: uppercase;
         letter-spacing: 6px;
         margin: auto;
-        text-shadow: 2px 2px grey;
+        text-shadow: 2px 2px $black;
         width: auto;
       }
-      button {
-        color: white;
-        background: $yellow;
-        font-size: 20px;
-        font-style: italic;
-        padding: 7px 13px;
-        text-shadow: 1px 1px grey;
-      }
+
     } // end text-area
   } // end atmo-image-row
+
+  #intro-row{
+    width: 100%;
+    text-align: center;
+    margin: 49px auto 62px auto;
+  }// end intro-row
 
   #guided-row {
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto;
-    h2 {
-      color: $yellow;
-      font-size: 2.9rem;
-      text-shadow: 1px 1px grey;
-      margin-bottom: 15px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-    p {
-      color: $paraGrey;
-      margin: auto;
-      width: 25%;
-      font-size: 10px;
-      line-height: 1.6;
-    }
   } // end guided-row
 
   #pic-link-row {
@@ -164,22 +260,6 @@ body {
     text-align: center;
     margin: 49px auto 62px auto;
     height: auto;
-
-    h2 {
-      color: $yellow;
-      font-size: 2.9rem;
-      text-shadow: 1px 1px grey;
-      margin-bottom: 15px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-    p {
-      color: $paraGrey;
-      margin: auto;
-      width: 25%;
-      font-size: 10px;
-      line-height: 1.6;
-    }
   } // end onboard-row
 
   #boat-images-row {
@@ -189,10 +269,8 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: center;
-
       .single-img {
         padding: 10px 50px 50px;
-
         .icons {
           height: 300px;
           width: 300px;
@@ -204,8 +282,8 @@ body {
     }
   } // end boat-images-row
 
-
 } // end body
+
 
 
 
@@ -215,6 +293,7 @@ footer {
   padding-bottom: 10px;
 	text-align: center;
 	color: white;
+  width: 100%;
   .menu {
   	padding-inline-start: 0px;
     li {
@@ -253,23 +332,29 @@ footer {
 
 /* Desktop and all screens bigger than that */
 @media only screen and (min-width: 1425px) {
-
 }
 
 /* laptop devices */
 @media only screen and (max-width: 1425px) {
-
-
 }
 
 /* tablet devices */
 @media only screen and (max-width: 1023px) {
-
-
 }
 
 /* mobile devices */
 @media only screen and (max-width: 769px) {
+
+  // repeated tags
+  p {
+    color: $paraGrey;
+    margin: auto;
+    width: 80% !important;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  // END of repeated tags
+
   #topnav-row {
     img {
       display: none;
@@ -304,6 +389,10 @@ footer {
 
   #image-row{
     width: 100%;
+    height: 100vh !important;
+    img {
+      height: 100vh !important;
+    }
     h1 {
       font-size: 3rem !important;
     }
@@ -369,3 +458,270 @@ footer {
   } // end boat-images-row
 
 }
+
+
+
+
+
+
+
+/*************************
+START OF SEPARATE PAGES
+************************/
+
+// START LOCATIONS CSS
+
+.parent-container{
+  .container {
+    .row {
+      padding-bottom: 80px;
+      .col-lg-12 {
+        h5 {
+          margin-left: auto !important;
+          margin-right: auto !important;
+          width: 60%;
+          padding-bottom: 20px;
+          padding-top: 50px;
+        }
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 10%;
+          width: 290px;
+          height: 200px;
+          margin-bottom: 15px;
+        }
+        .title {
+          margin-bottom: 20px;
+          margin-top: 40px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// END HTML LOCATIONS CSS
+
+
+
+
+// START  HTML GALLERY CSS
+body {
+  margin: 0;
+  padding: 0 !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+  }
+}
+
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  img {
+    max-width: 90%;
+    max-height: 80%;
+    padding: 4px;
+    background-color: black;
+    border: 2px solid white;
+  }
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* Background Styles Only */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+
+.text-box {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  .about-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 50%;
+    height: 30%;
+    border-radius: 50px;
+    -webkit-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+    -moz-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+    box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+  }
+  p{
+    width: 60%;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  button {
+  margin-bottom: 50px;
+
+  }
+}
+
+//END HTML GALLERY CSS
+
+
+
+//START HTML TOUR CSS
+
+
+
+
+#diff-tours-row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  .tour-type{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .tour-box{
+      padding: 10px 50px 50px;
+      position: relative;
+      .photo {
+        height: 200px;
+        width: 200px;
+        -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+        -moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+        box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+        position: relative;
+      } // end icons
+      .text-area {
+        position: absolute;
+        bottom: 50px;
+        left: 70px;
+      } // end text-area
+    } // end img-container
+  } // end navbar
+} //end pic-link-row
+
+
+//END HTML TOURS CSS
+
+
+
+//START HTML ABOUT US CSS
+
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+html, body {
+  background: #f1f1f1;
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+}
+
+
+
+form {
+   max-width: 600px;
+   text-align: center;
+   margin: 20px auto;
+
+  input, textarea {
+     border:0; outline:0;
+     padding: 1em;
+     border-radius: 8px;
+     display: block;
+     width: 100%;
+     margin-top: 1em;
+     font-family: 'Merriweather', sans-serif;
+     box-shadow: 0 1px 1px rgba(black, 0.1);
+     resize: none;
+
+    &:focus {
+       box-shadow:0 0px 2px rgba(red, 1)!important;
+    }
+  }
+
+  #input-submit {
+     color: white;
+     background: $skyDarkBlue;
+     cursor: pointer;
+
+    &:hover {
+       box-shadow:0 1px 1px 1px rgba(#aaa, 0.6);
+    }
+  }
+
+  textarea {
+      height: 126px;
+  }
+}
+
+
+.half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+     margin-right: 2%;
+}
+
+
+@media (max-width: 480px) {
+  .half {
+     width: 100%;
+     float: none;
+     margin-bottom: 0;
+  }
+}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+//END HTML ABOUT US CSS

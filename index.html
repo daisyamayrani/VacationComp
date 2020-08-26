@@ -8,32 +8,43 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,800" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
 
-    <div id="topnav-row" >
-      <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Logo_TV_2015.svg/1200px-Logo_TV_2015.svg.png">
-      <div class="topnav-right">
-        <a href="#">Diving</a>
-        <a href="#">Sailing</a>
-        <a href="#">Dining</a>
-        <a href="#">About</a>
-        <a href="#"><button>Book Now</button></a>
-      </div> <!-- end topnav-right -->
-    </div> <!-- end topnav -->
+
+    <!--Navigation bar-->
+    <div id="topnav-row">
+    </div>
+
+    <script>
+      $(function(){
+        $("#topnav-row").load("nav.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+
+
+
 
     <div id="image-row">
-      <img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+      <img src="https://images.unsplash.com/photo-1519659085987-2e3c6dc45f3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1359&q=80 ">
       <div class="text-area">
         <h4>Explore the World with</h4>
         <h1>Journey Ahead<h1>
-        <button>View Availability  <i class="fas fa-angle-right"></i></button>
+        <button>Book Now <i class="fas fa-angle-right"></i></button>
       </div>
     </div> <!-- end atmo-image-row-->
 
+    <div id="intro-row">
+      <h3>What we do</h3>
+      <p>At Journey Ahead we let you experience the time of your life. We offer land, underwater, and boating tours. We currently offer tours in 5 major locations. Book your tour today next time you travel.</p>
+
+    </div>
+
     <div id="guided-row">
       <h2>Guided Tours</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consectetur adipiscing elit ad. </p>
+      <p>Take tour with our knowledgeable, expert tour guides that can answer any of your questions. The will give the most interesting information you would most likely never come across unless you took this tour. </p>
     </div>
 
     <div id="pic-link-row">
@@ -46,7 +57,7 @@
           </div>
         </div><!-- end single-img -->
         <div class="single-img ">
-          <img class="icons" src="https://www.boatingmag.com/sites/boatingmag.com/files/styles/500_1x_/public/custom-touts/2018/04/yamaha-boats-channel.jpg?itok=TNE2k_eQ&fc=50,50">
+          <img class="icons" src="https://3willysdiving.com/wp-content/uploads/courses.png">
           <div class="text-area">
             <h5>Underwater Tour</h5>
             <h3>Deep sea Diving</h3>
@@ -64,13 +75,11 @@
 
     <div id="onboard-row">
       <h2>Onboard Amenities</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam consectetur adipiscing elit ad. </p>
+      <p>Our boating tours offer amenities that include: restrooms access, electrical outlets, binoculars for use, and complementary drinks. </p>
     </div> <!-- end onboard-row -->
 
     <div id="boat-images-row">
-
       <div class="img-area">
-
           <div class="single-img">
             <img class="icons" src="https://www.sandiego.org/-/media/images/sdta-site/things-to-do/beaches-bays/400x216/sanonofre-thumb400x216.jpg?h=216&la=en&w=400">
           </div>
@@ -82,46 +91,23 @@
           <div class="single-img">
             <img class="icons" src="https://www.discoverboating.com/sites/default/files/styles/cropped_grid_item/public/all-purpose_fishingboat_0.jpg?h=ad9b7fbf&itok=wckq1nzj">
           </div>
-
       </div>
-
     </div> <!-- end of boat-images-row -->
 
-    <footer>
-      <ul class="menu">
-        <li>
-          <a href="">Locations</a>
-        </li>
-        <li>
-          <a href="">Gallery</a>
-        </li>
-        <li>
-          <a href="">Tours</a>
-        </li>
-        <li>
-          <a href="">Support</a>
-        </li>
-      </ul>
 
-      <ul class="social-media">
-        <li>
-          <a href="#" target="new">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="new">
-            <i class="fab fa-twitter"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="new">
-            <i class="fab fa-google"></i>
-          </a>
-        </li>
-      </ul>
-      <p>&#9400; Journey Ahead. All Rights Reserved</p>
-		</footer>
-   <!-- end footer -->
+
+    <!--Footer-->
+    <footer>
+    </footer>
+
+    <script>
+      $(function(){
+        $("footer").load("footer.html");
+      });
+    </script>
+    <!--end of Footer->
+
+
+
   </body>
 </html>
