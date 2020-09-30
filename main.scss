@@ -70,15 +70,14 @@ body {
     -webkit-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
     -moz-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
     box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
-
     &:link {
-      color: white;
+      color: white !important;
     }
     &:visited {
       color: $greenYellow;
     }
     &:hover {
-      color: white;
+      color: white !important;
       background-color: $skyDarkBlue;
       font-size: 22px;
       padding: 7px 15px;
@@ -192,7 +191,11 @@ body {
         text-shadow: 2px 2px $black;
         width: auto;
       }
-
+      button {
+        a {
+          color: white;
+        }
+      }
     } // end text-area
   } // end atmo-image-row
 
@@ -200,6 +203,16 @@ body {
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto;
+    h3 {
+      font-family: cursive;
+      font-style: italic;
+      font-size: 4rem;
+      text-shadow: 2px 2px grey;
+      padding-bottom: 12px;
+    }
+    p {
+      font-size: 18px;
+    }
   }// end intro-row
 
   #guided-row {
@@ -465,38 +478,43 @@ footer {
 
 
 
-/*************************
+/*******************************************************
 START OF SEPARATE PAGES
-************************/
+***********************************************************/
 
 // START LOCATIONS CSS
 
 .parent-container{
-  .container {
-    .row {
+  .row {
+    width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    .item {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: 100%;
       padding-bottom: 80px;
-      .col-lg-12 {
-        h5 {
-          margin-left: auto !important;
-          margin-right: auto !important;
-          width: 60%;
-          padding-bottom: 20px;
-          padding-top: 50px;
-        }
-        img {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          border-radius: 10%;
-          width: 290px;
-          height: 200px;
-          margin-bottom: 15px;
-        }
-        .title {
-          margin-bottom: 20px;
-          margin-top: 40px;
-          text-align: center;
-        }
+      h5 {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        text-align: center;
+        width: 60%;
+        padding-bottom: 20px;
+        padding-top: 50px;
+      }
+      img {
+        display: block ;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        border-radius: 10%;
+        width: 270px !important;
+        height: 200px!important;
+        margin-bottom: 15px;
+      }
+      .title {
+        margin-bottom: 20px;
+        margin-top: 40px;
+        text-align: center;
       }
     }
   }
@@ -553,12 +571,59 @@ body {
   align-items: center;
 }
 
+//END HTML GALLERY CSS
 
 
 
-/* Background Styles Only */
+//START HTML TOUR CSS
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+#diff-tours-row {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  .tour-type{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .tour-box{
+      padding: 10px 50px 50px;
+      position: relative;
+      .photo {
+        height: 300px;
+        width: 200px;
+        opacity: 0.7;
+        -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+        -moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+        box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+        position: relative;
+      } // end icons
+      .text-area {
+        height: 300px;
+        width: 200px;
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        padding-bottom: 20px;
+        p {
+          color: $black;
+          text-shadow: 1px 1px grey;
+        }
+      } // end text-area
+    } // end tour box
+  } // end tour type
+} //end diff-tours-row
+
+
+//END HTML TOURS CSS
+
+
+
+//START HTML ABOUT US CSS
 
 
 
@@ -585,56 +650,17 @@ body {
   }
   button {
   margin-bottom: 50px;
-
+    a {
+      color: white;
+      &:hover {
+        color: $paraGrey;
+      }
+    }
   }
 }
 
-//END HTML GALLERY CSS
+//END HTML ABOUT US CSS
 
-
-
-//START HTML TOUR CSS
-
-
-
-
-#diff-tours-row {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  position: relative;
-  .tour-type{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    .tour-box{
-      padding: 10px 50px 50px;
-      position: relative;
-      .photo {
-        height: 200px;
-        width: 200px;
-        -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-        -moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-        box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-        position: relative;
-      } // end icons
-      .text-area {
-        position: absolute;
-        bottom: 50px;
-        left: 70px;
-      } // end text-area
-    } // end img-container
-  } // end navbar
-} //end pic-link-row
-
-
-//END HTML TOURS CSS
-
-
-
-//START HTML ABOUT US CSS
 
 
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
