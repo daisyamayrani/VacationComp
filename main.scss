@@ -287,6 +287,8 @@ body {
         .icons {
           height: 300px;
           width: 300px;
+          border-radius: 10px;
+          border: solid 1px grey;
           -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
           -moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
           box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
@@ -547,7 +549,6 @@ body {
   }
 }
 
-
 #lightbox {
   position: fixed;
   z-index: 1000;
@@ -570,6 +571,29 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+@media only screen and (max-width: 1023px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 130px) !important;
+    img {
+      width: 130px !important;
+      height: 130px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 90px) !important;
+    img {
+      width: 90px !important;
+      height: 90px !important;
+    }
+  }
+}
+
 
 //END HTML GALLERY CSS
 
@@ -749,5 +773,3 @@ form {
 .cf:after {
     clear: both;
 }
-
-//END HTML ABOUT US CSS

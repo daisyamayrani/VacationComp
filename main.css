@@ -218,6 +218,8 @@ body {
       body #boat-images-row .img-area .single-img .icons {
         height: 300px;
         width: 300px;
+        border-radius: 10px;
+        border: solid 1px grey;
         -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
         -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
         box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57); }
@@ -409,6 +411,20 @@ body {
   justify-content: center;
   align-items: center; }
 
+@media only screen and (max-width: 1023px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 130px) !important; }
+    .grid img {
+      width: 130px !important;
+      height: 130px !important; } }
+@media only screen and (max-width: 769px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 90px) !important; }
+    .grid img {
+      width: 90px !important;
+      height: 90px !important; } }
 #diff-tours-row {
   margin: 0;
   padding: 0;
