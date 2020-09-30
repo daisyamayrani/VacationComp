@@ -7,6 +7,7 @@ $paraGrey: #A4A4A4;
 $darkGrey: #838383;
 $skyDarkBlue: #004C66;
 $greenYellow: #cdad00;
+$offWhite: #FBFBF8;
 
 html {
   padding: 0 !important;
@@ -18,10 +19,9 @@ body {
   padding: 0;
   width: 100%;
   padding: 0 !important;
+
 //Basic styling for repeated tags
   .headerStyle {
-    // background: rgb(89,146,179);
-    // background: linear-gradient(107deg, rgba(89,146,179,1) 0%, rgba(70,121,195,1) 60%, rgba(30,136,57,1) 100%);
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -79,7 +79,6 @@ body {
     &:hover {
       color: white !important;
       background-color: $skyDarkBlue;
-      font-size: 22px;
       padding: 7px 15px;
     }
     &:active {
@@ -117,7 +116,6 @@ body {
           display: inline-block;
           text-align: center;
           padding: 14px 16px;
-          text-decoration: none;
           font-size: 15px;
           height: auto;
           &:link {
@@ -129,6 +127,7 @@ body {
           &:hover {
             color: $darkGrey;
             font-style: italic;
+            text-decoration: none !important;
           }
           &:active {
             color: $black;
@@ -170,7 +169,7 @@ body {
     color: white;
     img {
       width: 100%;
-      height: 800px;
+      height: 90vh;
       object-fit: cover;
     }
     .text-area {
@@ -200,6 +199,8 @@ body {
   } // end atmo-image-row
 
   #intro-row{
+    padding-top: 100px;
+    padding-bottom:100px;
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto;
@@ -314,6 +315,9 @@ footer {
     li {
     	display: inline-block;
     	padding: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
       a {
       	font-weight: 600;
       	color: white;
@@ -334,6 +338,7 @@ footer {
       	color: white;
       	font-size: 2rem;
       	opacity: .5;
+
       }
     }
   }
@@ -527,11 +532,9 @@ START OF SEPARATE PAGES
 
 
 
+
 // START  HTML GALLERY CSS
-body {
-  margin: 0;
-  padding: 0 !important;
-}
+
 
 .grid {
   display: grid;
@@ -608,38 +611,75 @@ body {
   padding: 0;
   width: 100%;
   position: relative;
-  .tour-type{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    .tour-box{
-      padding: 10px 50px 50px;
-      position: relative;
-      .photo {
-        height: 300px;
-        width: 200px;
-        opacity: 0.7;
-        -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-        -moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-        box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-        position: relative;
-      } // end icons
-      .text-area {
-        height: 300px;
-        width: 200px;
-        position: absolute;
-        bottom: 50px;
-        left: 50px;
-        padding-bottom: 20px;
-        p {
-          color: $black;
-          text-shadow: 1px 1px grey;
+  margin-left: auto;
+  margin-right: auto;
+    .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(400px, auto);
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+    width: 70%;
+    .tour-item {
+      color: white;
+      border-radius: 10px;
+      -webkit-box-shadow: 4px 6px 5px -2px rgba(112,106,112,0.86);
+      -moz-box-shadow: 4px 6px 5px -2px rgba(112,106,112,0.86);
+      box-shadow: 4px 6px 5px -2px rgba(112,106,112,0.86);
+      .pic-area {
+        width: auto;
+        img {
+          object-fit: contain;
+          border-radius: 10px 10px 0 0;
+          height: 50%;
+          width: 100%;
         }
-      } // end text-area
-    } // end tour box
-  } // end tour type
+      }
+      .text-area {
+        p {
+          color: $offWhite;
+        }
+      }
+    }
+    .one {
+      color: white;
+      background-color: brown;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    .two {
+      color: white;
+      background-color: $black;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+    .three {
+      color: white;
+      background-color: green;
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+    .four {
+      color: white;
+      background-color:  grey;
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+    .five {
+      color: white;
+      background-color: gold;
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+    .six {
+      color: white;
+      background-color: pink;
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+    }
+  }
 } //end diff-tours-row
 
 
