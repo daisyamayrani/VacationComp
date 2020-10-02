@@ -50,9 +50,8 @@ body {
     margin-right: auto !important;
     border-radius: 20px;
     border: 1px solid #838383;
-    -webkit-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
-    -moz-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
-    box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48); }
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0, 0, 0, 0.02); }
     body button:link {
       color: white !important; }
     body button:visited {
@@ -434,55 +433,76 @@ START OF SEPARATE PAGES
   #diff-tours-row .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(400px, auto);
-    margin-left: auto;
-    margin-right: auto;
+    grid-gap: 25px;
+    grid-auto-rows: minmax(600px, auto);
     padding-bottom: 60px;
-    width: 70%; }
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
     #diff-tours-row .wrapper .tour-item {
-      color: white;
       border-radius: 10px;
-      -webkit-box-shadow: 4px 6px 5px -2px rgba(112, 106, 112, 0.86);
-      -moz-box-shadow: 4px 6px 5px -2px rgba(112, 106, 112, 0.86);
-      box-shadow: 4px 6px 5px -2px rgba(112, 106, 112, 0.86); }
+      -webkit-box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43);
+      -moz-box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43);
+      box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43); }
       #diff-tours-row .wrapper .tour-item .pic-area {
-        width: auto; }
+        width: auto;
+        height: 60%;
+        position: static; }
         #diff-tours-row .wrapper .tour-item .pic-area img {
-          object-fit: contain;
-          border-radius: 10px 10px 0 0;
-          height: 50%;
-          width: 100%; }
-      #diff-tours-row .wrapper .tour-item .text-area p {
-        color: #FBFBF8; }
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px 10px 0 0; }
+      #diff-tours-row .wrapper .tour-item .text-area {
+        object-fit: contain;
+        height: 40%;
+        padding-left: 10px;
+        color: grey;
+        background-color: #FBFBF8;
+        position: relative; }
+        #diff-tours-row .wrapper .tour-item .text-area h5 {
+          color: #323232;
+          letter-spacing: 1.5px;
+          font-family: Poppins, cursive;
+          font-weight: bold; }
+        #diff-tours-row .wrapper .tour-item .text-area p {
+          width: 100%;
+          color: grey;
+          margin: 0;
+          padding: 0;
+          padding-bottom: 10px; }
+          #diff-tours-row .wrapper .tour-item .text-area p span {
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+            font-family: inherit;
+            font-weight: 500;
+            line-height: 1.2;
+            color: inherit;
+            padding-left: 10px; }
+        #diff-tours-row .wrapper .tour-item .text-area .title {
+          padding-top: 20px; }
+        #diff-tours-row .wrapper .tour-item .text-area .price, #diff-tours-row .wrapper .tour-item .text-area .duration {
+          font-style: italic; }
+        #diff-tours-row .wrapper .tour-item .text-area button {
+          position: absolute;
+          bottom: 15px;
+          right: 15px; }
     #diff-tours-row .wrapper .one {
-      color: white;
-      background-color: brown;
       grid-column: 1 / 2;
       grid-row: 1 / 2; }
     #diff-tours-row .wrapper .two {
-      color: white;
-      background-color: #323232;
       grid-column: 2 / 3;
       grid-row: 1 / 2; }
     #diff-tours-row .wrapper .three {
-      color: white;
-      background-color: green;
       grid-column: 3 / 4;
       grid-row: 1 / 2; }
     #diff-tours-row .wrapper .four {
-      color: white;
-      background-color: grey;
       grid-column: 1 / 2;
       grid-row: 2 / 3; }
     #diff-tours-row .wrapper .five {
-      color: white;
-      background-color: gold;
       grid-column: 2 / 3;
       grid-row: 2 / 3; }
     #diff-tours-row .wrapper .six {
-      color: white;
-      background-color: pink;
       grid-column: 3 / 4;
       grid-row: 2 / 3; }
 
