@@ -90,7 +90,7 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
 
 
 
-  #topnav-row {
+  .topnavRow {
     position: relative;
     box-sizing: border-box;
     height: 100%;
@@ -108,9 +108,9 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
       padding-bottom: 10px;
       margin-left: 40px;
       }
-      .topnav-right {
+      &__topnavRight {
         margin-right: 40px;
-        a {
+        &__a {
           color: $black;
           display: inline-block;
           text-align: center;
@@ -160,28 +160,29 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
       } //end of topnav-right
     } //end topnav-row
 
-  #image-row {
-    width: 100%;
+  .imageRow{
+    max-width: 100%;
     height: auto;
     position: relative;
     text-align: center;
     color: white;
-    img {
+    &__img {
       width: 100%;
-      height: 90vh;
+      height: 80vh;
       object-fit: cover;
+      object-position: center;
     }
-    .text-area {
+    &__textArea {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      h4 {
+      &__h4 {
         font-size: 15px;
         letter-spacing: 3.5px;
         text-shadow: 1px 1px $black;
       }
-      h1 {
+      &__h1 {
         font-size: 5rem;
         text-transform: uppercase;
         letter-spacing: 6px;
@@ -189,7 +190,7 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
         text-shadow: 2px 2px $black;
         width: auto;
       }
-      button {
+      &__btn {
         a {
           color: white;
         }
@@ -197,45 +198,45 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
     } // end text-area
   } // end atmo-image-row
 
-  #intro-row{
+  .introRow{
     padding-top: 100px;
     padding-bottom:100px;
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto;
-    h3 {
+    &__h3 {
       font-family: cursive;
       font-style: italic;
       font-size: 4rem;
       text-shadow: 2px 2px grey;
       padding-bottom: 12px;
     }
-    p {
+    &__p {
       font-size: 18px;
     }
   }// end intro-row
 
-  #guided-row {
+  .guidedRow {
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto;
   } // end guided-row
 
-  #pic-link-row {
+  .picLinkRow {
     margin: 0;
     padding: 0;
     width: 100%;
     position: relative;
-    .img-area {
+    &__imgArea {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      .single-img {
+      &__singleImg {
         padding: 10px 50px 50px;
         position: relative;
-        .icons {
+        &__icons {
           height: 450px;
           width: 450px;
           -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
@@ -243,7 +244,7 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
           box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
           position: relative;
         } // end icons
-        .text-area {
+        &__textArea {
           position: absolute;
           bottom: 50px;
           left: 70px;
@@ -268,23 +269,23 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
     } // end navbar
   } //end pic-link-row
 
-  #onboard-row {
+  .onboardRow {
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto;
     height: auto;
   } // end onboard-row
 
-  #boat-images-row {
-    .img-area {
+  .boatImagesRow {
+    &__imgArea {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      .single-img {
+      &__singleImg {
         padding: 10px 50px 50px;
-        .icons {
+        &__icons {
           height: 300px;
           width: 300px;
           border-radius: 10px;
@@ -302,14 +303,14 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
 
 
 
-footer {
+.footer {
   background: $darkGrey;
 	padding-top: 25px;
   padding-bottom: 10px;
 	text-align: center;
 	color: white;
   width: 100%;
-  .menu {
+  &__menu {
   	padding-inline-start: 0px;
     li {
     	display: inline-block;
@@ -326,7 +327,7 @@ footer {
       }
     }
   }
-  .social-media {
+  &__socialMedia {
     padding-bottom: 20px;
     padding-left: 0px;
     li {
@@ -374,7 +375,7 @@ footer {
   }
   // END of repeated tags
 
-  #topnav-row {
+  .topnavRow {
     img {
       display: none;
     }
@@ -384,16 +385,16 @@ footer {
 /*when the top nav button moves*/
 @media only screen and (max-width: 609px) {
 
-  #topnav-row {
+  .topnavRow {
     margin-right: auto !important;
     margin-left: auto !important;
     img {
       display: none;
     }
-    .topnav-right {
+    &__topnavRight {
       margin-right: auto !important;
       margin-left: auto !important;
-      a {
+      &__a {
         font-size: 11px !important;
       }
       a:nth-child(5) {
@@ -406,42 +407,44 @@ footer {
     }
   }
 
-  #image-row{
+  .imageRow{
     width: 100%;
     height: 100vh !important;
-    img {
+    &__img {
       height: 100vh !important;
     }
-    h1 {
-      font-size: 3rem !important;
-    }
-    button {
-      color: white;
-      background: $yellow;
-      font-size: 20px;
-      font-style: italic;
-      padding: 7px 13px;
-      text-shadow: 1px 1px grey;
+    &__textArea {
+      &__h1 {
+        font-size: 3rem !important;
+      }
+      &__btn {
+        color: white;
+        background: $yellow;
+        font-size: 20px;
+        font-style: italic;
+        padding: 7px 13px;
+        text-shadow: 1px 1px grey;
+      }
     }
   }
 
-  #pic-link-row {
+  .picLinkRow {
     margin-left: auto !important;
     margin-right: auto !important;
-    .img-area {
+    &__imgArea {
       display: block;
       align-items: center;
       margin-left: auto !important;
       margin-right: auto !important;
-      .single-img {
+      &__singleImg {
         padding: 5px 5px 30px 5px !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        .icons {
+        &__icons {
           width: 300px !important;
           height: 400px !important;
         }
-        .text-area {
+        &__textArea {
           position: absolute;
           bottom: 35px !important;
           left: 37px !important;
@@ -450,25 +453,25 @@ footer {
     }
   } //end pic-link-row
 
-  #onboard-row {
-    h2 {
+  .onboardRow {
+    &__h2 {
       font-size: 35px !important;
     }
   }
 
-  #boat-images-row {
+  .boatImagesRow {
     margin-left: auto !important;
     margin-right: auto !important;
-    .img-area {
+    &__imgArea {
       display: block;
       align-items: center;
       margin-left: auto !important;
       margin-right: auto !important;
-      .single-img {
+      &__singleImg {
         padding: 5px 5px 30px 5px !important;
         margin-left: auto !important;
         margin-right: auto !important;
-        .icons {
+        &__icons {
           width: 200px !important;
           height: 200px !important;
         }
@@ -490,7 +493,7 @@ START OF SEPARATE PAGES
 
 // START LOCATIONS CSS
 
-.parent-container{
+.location {
   .row {
     width: 100%;
     margin-left: auto !important;

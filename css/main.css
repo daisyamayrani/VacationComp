@@ -62,7 +62,7 @@ body {
       padding: 7px 15px; }
     body button:active {
       color: #323232; }
-  body #topnav-row {
+  body .topnavRow {
     position: relative;
     box-sizing: border-box;
     height: 100%;
@@ -71,7 +71,7 @@ body {
     align-content: center;
     padding: 8px 0;
     text-align: right; }
-    body #topnav-row img {
+    body .topnavRow img {
       width: 90px;
       height: 90px;
       object-fit: contain;
@@ -79,26 +79,26 @@ body {
       padding-left: 20px;
       padding-bottom: 10px;
       margin-left: 40px; }
-    body #topnav-row .topnav-right {
+    body .topnavRow__topnavRight {
       margin-right: 40px; }
-      body #topnav-row .topnav-right a {
+      body .topnavRow__topnavRight__a {
         color: #323232;
         display: inline-block;
         text-align: center;
         padding: 14px 16px;
         font-size: 15px;
         height: auto; }
-        body #topnav-row .topnav-right a:link {
+        body .topnavRow__topnavRight__a:link {
           color: #323232; }
-        body #topnav-row .topnav-right a:visited {
+        body .topnavRow__topnavRight__a:visited {
           color: #323232; }
-        body #topnav-row .topnav-right a:hover {
+        body .topnavRow__topnavRight__a:hover {
           color: #838383;
           font-style: italic;
           text-decoration: none !important; }
-        body #topnav-row .topnav-right a:active {
+        body .topnavRow__topnavRight__a:active {
           color: #323232; }
-      body #topnav-row .topnav-right a button {
+      body .topnavRow__topnavRight a button {
         color: white;
         background: #FFD83B;
         font-size: 12px;
@@ -108,93 +108,94 @@ body {
         -webkit-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
         -moz-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
         box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48); }
-        body #topnav-row .topnav-right a button:link {
+        body .topnavRow__topnavRight a button:link {
           color: white; }
-        body #topnav-row .topnav-right a button:visited {
+        body .topnavRow__topnavRight a button:visited {
           color: #cdad00; }
-        body #topnav-row .topnav-right a button:hover {
+        body .topnavRow__topnavRight a button:hover {
           color: white;
           background-color: #004C66; }
-        body #topnav-row .topnav-right a button:active {
+        body .topnavRow__topnavRight a button:active {
           color: #323232; }
-  body #image-row {
-    width: 100%;
+  body .imageRow {
+    max-width: 100%;
     height: auto;
     position: relative;
     text-align: center;
     color: white; }
-    body #image-row img {
+    body .imageRow__img {
       width: 100%;
-      height: 90vh;
-      object-fit: cover; }
-    body #image-row .text-area {
+      height: 80vh;
+      object-fit: cover;
+      object-position: center; }
+    body .imageRow__textArea {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-      body #image-row .text-area h4 {
+      body .imageRow__textArea__h4 {
         font-size: 15px;
         letter-spacing: 3.5px;
         text-shadow: 1px 1px #323232; }
-      body #image-row .text-area h1 {
+      body .imageRow__textArea__h1 {
         font-size: 5rem;
         text-transform: uppercase;
         letter-spacing: 6px;
         margin: auto;
         text-shadow: 2px 2px #323232;
         width: auto; }
-      body #image-row .text-area button a {
+      body .imageRow__textArea__btn a {
         color: white; }
-  body #intro-row {
+  body .introRow {
     padding-top: 100px;
     padding-bottom: 100px;
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto; }
-    body #intro-row h3 {
+    body .introRow__h3 {
       font-family: cursive;
       font-style: italic;
       font-size: 4rem;
       text-shadow: 2px 2px grey;
       padding-bottom: 12px; }
-    body #intro-row p {
+    body .introRow__p {
       font-size: 18px; }
-  body #guided-row {
+  body .guidedRow {
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto; }
-  body #pic-link-row {
+  body .picLinkRow {
     margin: 0;
     padding: 0;
     width: 100%;
     position: relative; }
-    body #pic-link-row .img-area {
+    body .picLinkRow__imgArea {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
       justify-content: center; }
-      body #pic-link-row .img-area .single-img {
+      body .picLinkRow__imgArea__singleImg {
         padding: 10px 50px 50px;
         position: relative; }
-        body #pic-link-row .img-area .single-img .icons {
+        body .picLinkRow__imgArea__singleImg__icons {
           height: 450px;
           width: 450px;
           -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
           -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
           box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
           position: relative; }
-        body #pic-link-row .img-area .single-img .text-area {
+        body .picLinkRow__imgArea__singleImg__textArea {
           position: absolute;
           bottom: 50px;
           left: 70px; }
-          body #pic-link-row .img-area .single-img .text-area h5 {
+          body .picLinkRow__imgArea__singleImg__textArea h5 {
             color: white;
             letter-spacing: .8px;
             font-size: 14px;
             margin-bottom: 6px;
             text-shadow: 1px 1px grey; }
-          body #pic-link-row .img-area .single-img .text-area h3 {
+          body .picLinkRow__imgArea__singleImg__textArea h3 {
             color: #FFD83B;
             letter-spacing: 1px;
             font-size: 15px;
@@ -202,20 +203,20 @@ body {
             margin-bottom: 18px;
             text-transform: uppercase;
             text-shadow: 1px 1px grey; }
-  body #onboard-row {
+  body .onboardRow {
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto;
     height: auto; }
-  body #boat-images-row .img-area {
+  body .boatImagesRow__imgArea {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center; }
-    body #boat-images-row .img-area .single-img {
+    body .boatImagesRow__imgArea__singleImg {
       padding: 10px 50px 50px; }
-      body #boat-images-row .img-area .single-img .icons {
+      body .boatImagesRow__imgArea__singleImg__icons {
         height: 300px;
         width: 300px;
         border-radius: 10px;
@@ -224,38 +225,38 @@ body {
         -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
         box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57); }
 
-footer {
+.footer {
   background: #838383;
   padding-top: 25px;
   padding-bottom: 10px;
   text-align: center;
   color: white;
   width: 100%; }
-  footer .menu {
+  .footer__menu {
     padding-inline-start: 0px; }
-    footer .menu li {
+    .footer__menu li {
       display: inline-block;
       padding: 20px; }
-      footer .menu li:hover {
+      .footer__menu li:hover {
         text-decoration: underline; }
-      footer .menu li a {
+      .footer__menu li a {
         font-weight: 600;
         color: white;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 0.8rem; }
-  footer .social-media {
+  .footer__socialMedia {
     padding-bottom: 20px;
     padding-left: 0px; }
-    footer .social-media li {
+    .footer__socialMedia li {
       display: inline-block;
       padding: 0 10px; }
-      footer .social-media li a {
+      .footer__socialMedia li a {
         padding: 2px;
         color: white;
         font-size: 2rem;
         opacity: .5; }
-  footer p {
+  .footer p {
     font-size: 0.8rem;
     font-weight: 300; }
 
@@ -271,33 +272,33 @@ footer {
     font-size: 14px;
     line-height: 1.5; }
 
-  #topnav-row img {
+  .topnavRow img {
     display: none; } }
 /*when the top nav button moves*/
 @media only screen and (max-width: 609px) {
-  #topnav-row {
+  .topnavRow {
     margin-right: auto !important;
     margin-left: auto !important; }
-    #topnav-row img {
+    .topnavRow img {
       display: none; }
-    #topnav-row .topnav-right {
+    .topnavRow__topnavRight {
       margin-right: auto !important;
       margin-left: auto !important; }
-      #topnav-row .topnav-right a {
+      .topnavRow__topnavRight__a {
         font-size: 11px !important; }
-      #topnav-row .topnav-right a:nth-child(5) {
+      .topnavRow__topnavRight a:nth-child(5) {
         display: none !important; }
-        #topnav-row .topnav-right a:nth-child(5) button {
+        .topnavRow__topnavRight a:nth-child(5) button {
           display: none !important; }
 
-  #image-row {
+  .imageRow {
     width: 100%;
     height: 100vh !important; }
-    #image-row img {
+    .imageRow__img {
       height: 100vh !important; }
-    #image-row h1 {
+    .imageRow__textArea__h1 {
       font-size: 3rem !important; }
-    #image-row button {
+    .imageRow__textArea__btn {
       color: white;
       background: #FFD83B;
       font-size: 20px;
@@ -305,64 +306,64 @@ footer {
       padding: 7px 13px;
       text-shadow: 1px 1px grey; }
 
-  #pic-link-row {
+  .picLinkRow {
     margin-left: auto !important;
     margin-right: auto !important; }
-    #pic-link-row .img-area {
+    .picLinkRow__imgArea {
       display: block;
       align-items: center;
       margin-left: auto !important;
       margin-right: auto !important; }
-      #pic-link-row .img-area .single-img {
+      .picLinkRow__imgArea__singleImg {
         padding: 5px 5px 30px 5px !important;
         margin-left: auto !important;
         margin-right: auto !important; }
-        #pic-link-row .img-area .single-img .icons {
+        .picLinkRow__imgArea__singleImg__icons {
           width: 300px !important;
           height: 400px !important; }
-        #pic-link-row .img-area .single-img .text-area {
+        .picLinkRow__imgArea__singleImg__textArea {
           position: absolute;
           bottom: 35px !important;
           left: 37px !important; }
 
-  #onboard-row h2 {
+  .onboardRow__h2 {
     font-size: 35px !important; }
 
-  #boat-images-row {
+  .boatImagesRow {
     margin-left: auto !important;
     margin-right: auto !important; }
-    #boat-images-row .img-area {
+    .boatImagesRow__imgArea {
       display: block;
       align-items: center;
       margin-left: auto !important;
       margin-right: auto !important; }
-      #boat-images-row .img-area .single-img {
+      .boatImagesRow__imgArea__singleImg {
         padding: 5px 5px 30px 5px !important;
         margin-left: auto !important;
         margin-right: auto !important; }
-        #boat-images-row .img-area .single-img .icons {
+        .boatImagesRow__imgArea__singleImg__icons {
           width: 200px !important;
           height: 200px !important; } }
 /*******************************************************
 START OF SEPARATE PAGES
 ***********************************************************/
-.parent-container .row {
+.location .row {
   width: 100%;
   margin-left: auto !important;
   margin-right: auto !important; }
-  .parent-container .row .item {
+  .location .row .item {
     margin-left: auto !important;
     margin-right: auto !important;
     width: 100%;
     padding-bottom: 80px; }
-    .parent-container .row .item h5 {
+    .location .row .item h5 {
       margin-left: auto !important;
       margin-right: auto !important;
       text-align: center;
       width: 60%;
       padding-bottom: 20px;
       padding-top: 50px; }
-    .parent-container .row .item img {
+    .location .row .item img {
       display: block;
       margin-left: auto !important;
       margin-right: auto !important;
@@ -370,7 +371,7 @@ START OF SEPARATE PAGES
       width: 270px !important;
       height: 200px !important;
       margin-bottom: 15px; }
-    .parent-container .row .item .title {
+    .location .row .item .title {
       margin-bottom: 20px;
       margin-top: 40px;
       text-align: center; }
