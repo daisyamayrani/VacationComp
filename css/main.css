@@ -533,6 +533,10 @@ START OF SEPARATE PAGES
       .text-box button a:hover {
         color: #A4A4A4; }
 
+.fastLogIn {
+  max-width: 50%;
+  margin: auto; }
+
 *,
 *:before,
 *:after {
