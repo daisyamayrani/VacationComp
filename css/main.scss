@@ -1,37 +1,7 @@
-$yellow: #ffd83b;
-$bgPurple: #ba36db;
-$black: #323232;
-$paraGrey: #a4a4a4;
-$darkGrey: #838383;
-$skyDarkBlue: #004c66;
-$greenYellow: #cdad00;
-$offWhite: #fbfbf8;
-
-html {
-  padding: 0 !important;
-}
+@import "colors";
+@import "reset";
 
 body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  padding: 0 !important;
-
-  //images to change for the background on the home page
-  .bgImg1 {
-    background-image: url("https://images.unsplash.com/photo-1519659085987-2e3c6dc45f3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1359&q=80 ");
-  }
-  .bgImg2 {
-    background-image: url("https://images.unsplash.com/photo-1415650328328-1909c4ceabdb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1359&q=80 ");
-  }
-  .bgImg3 {
-    background-image: url("https://images.unsplash.com/photo-1472017454701-20a80cfeaac5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1359&q=80 ");
-  }
-  .bgImg4 {
-    background-image: url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1359&q=80 ");
-  }
-
   //Basic styling for repeated tags
   .headerStyle {
     padding-top: 20px;
