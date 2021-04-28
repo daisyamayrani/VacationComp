@@ -161,6 +161,10 @@ body .imageRow {
         body .imageRow__textArea__center__dotsMenu .fa-circle {
           margin-left: 0.5rem;
           font-size: 1rem; }
+    body .imageRow__textArea .imgArrow {
+      text-shadow: 1px 1px grey; }
+      body .imageRow__textArea .imgArrow:hover {
+        color: #a4a4a4; }
 body .introRow {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -245,8 +249,7 @@ body .boatImagesRow__imgArea {
   padding-top: 25px;
   padding-bottom: 10px;
   text-align: center;
-  color: white;
-  width: 100%; }
+  color: white; }
   .footer__menu {
     padding-inline-start: 0px; }
     .footer__menu li {
@@ -604,9 +607,17 @@ form {
       .text-box button a:hover {
         color: #a4a4a4; }
 
-.fastLogIn {
-  max-width: 50%;
-  margin: auto; }
+.signInForm {
+  background-color: #8ca4d2;
+  padding: 30px;
+  border-radius: 4%; }
+  .signInForm label {
+    color: #fbfbf8; }
+  .signInForm p {
+    color: #fbfbf8; }
+  .signInForm a {
+    color: #323232;
+    text-decoration: underline; }
 
 *,
 *:before,

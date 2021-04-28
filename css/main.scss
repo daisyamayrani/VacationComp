@@ -185,6 +185,12 @@ body {
           }
         }
       }
+      .imgArrow {
+        text-shadow: 1px 1px grey;
+        &:hover {
+          color: $paraGrey;
+        }
+      }
     } // end text-area
   } // end atmo-image-row
 
@@ -295,7 +301,6 @@ body {
   padding-bottom: 10px;
   text-align: center;
   color: white;
-  width: 100%;
   &__menu {
     padding-inline-start: 0px;
     li {
@@ -744,9 +749,6 @@ form {
   }
 } //end diff-tours-row
 
-@media (max-width: 480px) {
-}
-
 @media only screen and (max-width: 769px) {
 }
 
@@ -790,9 +792,20 @@ form {
 
 //START HTML ACCOUNT CSS
 
-.fastLogIn {
-  max-width: 50%;
-  margin: auto;
+.signInForm {
+  background-color: $greyBlue;
+  padding: 30px;
+  border-radius: 4%;
+  label {
+    color: $offWhite;
+  }
+  p {
+    color: $offWhite;
+  }
+  a {
+    color: $black;
+    text-decoration: underline;
+  }
 }
 
 //END HTML ACCOUNT CSS
