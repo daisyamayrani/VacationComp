@@ -1,26 +1,38 @@
-
-
-$yellow: #FFD83B;
-$bgPurple: #BA36DB;
-$black : #323232;
-$paraGrey: #A4A4A4;
+$yellow: #ffd83b;
+$bgPurple: #ba36db;
+$black: #323232;
+$paraGrey: #a4a4a4;
 $darkGrey: #838383;
-$skyDarkBlue: #004C66;
+$skyDarkBlue: #004c66;
 $greenYellow: #cdad00;
-$offWhite: #FBFBF8;
+$offWhite: #fbfbf8;
 
 html {
   padding: 0 !important;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   width: 100%;
   padding: 0 !important;
 
-//Basic styling for repeated tags
+  //images to change for the background on the home page
+  .bgImg1 {
+    background-image: url("https://images.unsplash.com/photo-1519659085987-2e3c6dc45f3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1359&q=80 ");
+  }
+  .bgImg2 {
+    background-image: url("https://images.unsplash.com/photo-1415650328328-1909c4ceabdb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1359&q=80 ");
+  }
+  .bgImg3 {
+    background-image: url("https://images.unsplash.com/photo-1472017454701-20a80cfeaac5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1359&q=80 ");
+  }
+  .bgImg4 {
+    background-image: url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1359&q=80 ");
+  }
+
+  //Basic styling for repeated tags
   .headerStyle {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -40,7 +52,7 @@ body {
   }
   h3 {
     font-size: 2rem;
-    color: $skyDarkBlue;
+    color: $yellow;
     text-transform: capitalize;
     letter-spacing: 2px;
     margin: auto;
@@ -67,8 +79,10 @@ body {
     margin-right: auto !important;
     border-radius: 20px;
     border: 1px solid $darkGrey;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
-box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      43px -37px 16px 3px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 10px 13px -7px #000000,
+      43px -37px 16px 3px rgba(0, 0, 0, 0.02);
     &:link {
       color: white !important;
     }
@@ -85,10 +99,7 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
     }
   }
 
-
-//End basic styling for repeated tags
-
-
+  //End basic styling for repeated tags
 
   .topnavRow {
     position: relative;
@@ -107,100 +118,109 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
       padding-left: 20px;
       padding-bottom: 10px;
       margin-left: 40px;
-      }
-      &__topnavRight {
-        margin-right: 40px;
-        &__a {
+    }
+    &__topnavRight {
+      margin-right: 40px;
+      &__a {
+        color: $black;
+        display: inline-block;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 15px;
+        height: auto;
+        &:link {
           color: $black;
-          display: inline-block;
-          text-align: center;
-          padding: 14px 16px;
-          font-size: 15px;
-          height: auto;
-          &:link {
-            color: $black;
-          }
-          &:visited {
-            color: $black;
-          }
-          &:hover {
-            color: $darkGrey;
-            font-style: italic;
-            text-decoration: none !important;
-          }
-          &:active {
-            color: $black;
-          }
         }
-        a button {
+        &:visited {
+          color: $black;
+        }
+        &:hover {
+          color: $darkGrey;
+          font-style: italic;
+          text-decoration: none !important;
+        }
+        &:active {
+          color: $black;
+        }
+      }
+      a button {
+        color: white;
+        background: $yellow;
+        font-size: 12px;
+        padding: 8px 12px;
+        text-shadow: 1px 1px grey;
+        border: 1px solid $darkGrey;
+        -webkit-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
+        box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
+        &:link {
           color: white;
-          background: $yellow;
-          font-size: 12px;
-          padding: 8px 12px;
-          text-shadow: 1px 1px grey;
-          border: 1px solid $darkGrey;
-          -webkit-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
-          -moz-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
-          box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
-          &:link {
-            color: white;
-          }
-          &:visited {
-            color: $greenYellow;
-          }
-          &:hover {
-            color: white;
-            background-color: $skyDarkBlue;
-          }
-          &:active {
-            color: $black;
-          }
-
         }
-      } //end of topnav-right
-    } //end topnav-row
+        &:visited {
+          color: $greenYellow;
+        }
+        &:hover {
+          color: white;
+          background-color: $skyDarkBlue;
+        }
+        &:active {
+          color: $black;
+        }
+      }
+    } //end of topnav-right
+  } //end topnav-row
 
-  .imageRow{
+  .imageRow {
     max-width: 100%;
-    height: auto;
-    position: relative;
-    text-align: center;
     color: white;
-    &__img {
+    // background-image: url("https://images.unsplash.com/photo-1519659085987-2e3c6dc45f3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1359&q=80 ");
+    max-height: 80vh;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    &__textArea {
       width: 100%;
       height: 80vh;
-      object-fit: cover;
-      object-position: center;
-    }
-    &__textArea {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      &__h4 {
-        font-size: 15px;
-        letter-spacing: 3.5px;
-        text-shadow: 1px 1px $black;
+      margin-left: auto;
+      margin-right: auto;
+      .imgArrow {
+        font-size: 2.8rem;
       }
-      &__h1 {
-        font-size: 5rem;
-        text-transform: uppercase;
-        letter-spacing: 6px;
-        margin: auto;
-        text-shadow: 2px 2px $black;
-        width: auto;
-      }
-      &__btn {
-        a {
-          color: white;
+      &__center {
+        text-align: center;
+        &__h4 {
+          font-size: 15px;
+          letter-spacing: 3.5px;
+          text-shadow: 1px 1px $black;
+        }
+        &__h1 {
+          font-size: 5rem;
+          text-transform: uppercase;
+          letter-spacing: 6px;
+          text-shadow: 2px 2px $black;
+          width: auto;
+        }
+        &__btn {
+          a {
+            color: white;
+          }
+        }
+        &__dotsMenu {
+          margin-top: 5rem;
+          .fa-circle {
+            margin-left: 0.5rem;
+            font-size: 1rem;
+          }
         }
       }
     } // end text-area
   } // end atmo-image-row
 
-  .introRow{
+  .introRow {
     padding-top: 100px;
-    padding-bottom:100px;
+    padding-bottom: 100px;
     width: 100%;
     text-align: center;
     margin: 49px auto 62px auto;
@@ -214,7 +234,7 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
     &__p {
       font-size: 18px;
     }
-  }// end intro-row
+  } // end intro-row
 
   .guidedRow {
     width: 100%;
@@ -239,9 +259,9 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
         &__icons {
           height: 450px;
           width: 450px;
-          -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-          -moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-          box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+          -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
+          -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
+          box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
           position: relative;
         } // end icons
         &__textArea {
@@ -250,7 +270,7 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
           left: 70px;
           h5 {
             color: white;
-            letter-spacing: .8px;
+            letter-spacing: 0.8px;
             font-size: 14px;
             margin-bottom: 6px;
             text-shadow: 1px 1px grey;
@@ -290,40 +310,36 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
           width: 300px;
           border-radius: 10px;
           border: solid 1px grey;
-          -webkit-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-          -moz-box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
-          box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.57);
+          -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
+          -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
+          box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
         }
       }
     }
   } // end boat-images-row
-
 } // end body
-
-
-
 
 .footer {
   background: $darkGrey;
-	padding-top: 25px;
+  padding-top: 25px;
   padding-bottom: 10px;
-	text-align: center;
-	color: white;
+  text-align: center;
+  color: white;
   width: 100%;
   &__menu {
-  	padding-inline-start: 0px;
+    padding-inline-start: 0px;
     li {
-    	display: inline-block;
-    	padding: 20px;
+      display: inline-block;
+      padding: 20px;
       &:hover {
         text-decoration: underline;
       }
       a {
-      	font-weight: 600;
-      	color: white;
-      	text-decoration: none;
-      	text-transform: uppercase;
-      	font-size: 0.8rem;
+        font-weight: 600;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.8rem;
       }
     }
   }
@@ -331,24 +347,21 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
     padding-bottom: 20px;
     padding-left: 0px;
     li {
-    	display: inline-block;
+      display: inline-block;
       padding: 0 10px;
       a {
         padding: 2px;
-      	color: white;
-      	font-size: 2rem;
-      	opacity: .5;
-
+        color: white;
+        font-size: 2rem;
+        opacity: 0.5;
       }
     }
   }
   p {
-  	font-size: 0.8rem;
-  	font-weight: 300;
+    font-size: 0.8rem;
+    font-weight: 300;
   }
 }
-
-
 
 /* Desktop and all screens bigger than that */
 @media only screen and (min-width: 1425px) {
@@ -364,7 +377,6 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
 
 /* mobile devices */
 @media only screen and (max-width: 769px) {
-
   // repeated tags
   p {
     color: $paraGrey;
@@ -384,7 +396,6 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
 
 /*when the top nav button moves*/
 @media only screen and (max-width: 609px) {
-
   .topnavRow {
     margin-right: auto !important;
     margin-left: auto !important;
@@ -401,13 +412,12 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
         display: none !important;
         button {
           display: none !important;
-
         }
       }
     }
   }
 
-  .imageRow{
+  .imageRow {
     width: 100%;
     height: 100vh !important;
     &__img {
@@ -478,14 +488,7 @@ box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0,0,0,0.02);
       }
     }
   } // end boat-images-row
-
 }
-
-
-
-
-
-
 
 /*******************************************************
 START OF SEPARATE PAGES
@@ -512,12 +515,12 @@ START OF SEPARATE PAGES
         padding-top: 50px;
       }
       img {
-        display: block ;
+        display: block;
         margin-left: auto !important;
         margin-right: auto !important;
         border-radius: 10%;
         width: 270px !important;
-        height: 200px!important;
+        height: 200px !important;
         margin-bottom: 15px;
       }
       .title {
@@ -530,41 +533,42 @@ START OF SEPARATE PAGES
 }
 
 form {
-   max-width: 600px;
-   text-align: center;
-   margin: 3rem auto;
+  max-width: 600px;
+  text-align: center;
+  margin: 3rem auto;
 
-  input, textarea {
-     border:0; outline:0;
-     padding: 1em;
-     border-radius: 8px;
-     display: block;
-     width: 100%;
-     margin-top: 1em;
-     font-family: 'Merriweather', sans-serif;
-     box-shadow: 0 1px 1px rgba(black, 0.1);
-     resize: none;
+  input,
+  textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: "Merriweather", sans-serif;
+    box-shadow: 0 1px 1px rgba(black, 0.1);
+    resize: none;
 
     &:focus {
-       box-shadow:0 0px 2px rgba(red, 1)!important;
+      box-shadow: 0 0px 2px rgba(red, 1) !important;
     }
   }
 
   #input-submit {
-     color: white;
-     background: $skyDarkBlue;
-     cursor: pointer;
+    color: white;
+    background: $skyDarkBlue;
+    cursor: pointer;
 
     &:hover {
-       box-shadow:0 1px 1px 1px rgba(#aaa, 0.6);
+      box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
     }
   }
 
   textarea {
-      height: 126px;
+    height: 126px;
   }
 }
-
 
 .half {
   float: left;
@@ -572,40 +576,36 @@ form {
   margin-bottom: 1em;
 }
 
-.right { width: 50%; }
-
-.left {
-     margin-right: 2%;
+.right {
+  width: 50%;
 }
 
+.left {
+  margin-right: 2%;
+}
 
 @media (max-width: 480px) {
   .half {
-     width: 100%;
-     float: none;
-     margin-bottom: 0;
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
   }
 }
 
 /* Clearfix */
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+  clear: both;
 }
 
 // END HTML LOCATIONS CSS
 
-
-
-
-
 // START  HTML GALLERY CSS
-
 
 .grid {
   display: grid;
@@ -629,7 +629,7 @@ form {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: none;
   img {
     max-width: 90%;
@@ -668,14 +668,9 @@ form {
   }
 }
 
-
 //END HTML GALLERY CSS
 
-
-
 //START HTML TOUR CSS
-
-
 
 #diff-tours-row {
   margin: 0;
@@ -684,7 +679,7 @@ form {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-    .wrapper {
+  .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
@@ -694,11 +689,10 @@ form {
     margin-left: auto;
     margin-right: auto;
     .tour-item {
-      
       border-radius: 10px;
-      -webkit-box-shadow: 6px 25px 32px -6px rgba(0,0,0,0.43);
-      -moz-box-shadow: 6px 25px 32px -6px rgba(0,0,0,0.43);
-      box-shadow: 6px 25px 32px -6px rgba(0,0,0,0.43);
+      -webkit-box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43);
+      -moz-box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43);
+      box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43);
       .pic-area {
         width: auto;
         height: 60%;
@@ -731,7 +725,7 @@ form {
           padding-bottom: 10px;
           span {
             font-size: 1.4rem;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
             font-family: inherit;
             font-weight: 500;
             line-height: 1.2;
@@ -742,7 +736,8 @@ form {
         .title {
           padding-top: 20px;
         }
-        .price, .duration {
+        .price,
+        .duration {
           font-style: italic;
         }
         button {
@@ -779,22 +774,15 @@ form {
   }
 } //end diff-tours-row
 
-
 @media (max-width: 480px) {
-
 }
 
 @media only screen and (max-width: 769px) {
-
 }
 
 //END HTML TOURS CSS
 
-
-
 //START HTML ABOUT US CSS
-
-
 
 .text-box {
   margin-left: auto;
@@ -808,17 +796,17 @@ form {
     width: 50%;
     height: 30%;
     border-radius: 50px;
-    -webkit-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
-    -moz-box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
-    box-shadow: 16px 10px 16px -3px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
+    box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
   }
-  p{
+  p {
     width: 60%;
     font-size: 15px;
     margin-bottom: 30px;
   }
   button {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
     a {
       color: white;
       &:hover {
@@ -830,8 +818,6 @@ form {
 
 //END HTML ABOUT US CSS
 
-
-
 //START HTML ACCOUNT CSS
 
 .fastLogIn {
@@ -839,24 +825,19 @@ form {
   margin: auto;
 }
 
-
 //END HTML ACCOUNT CSS
 
-
-
-
-
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
-
 
 *,
 *:before,
 *:after {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   background: #f1f1f1;
-  font-family: 'Merriweather', sans-serif;
+  font-family: "Merriweather", sans-serif;
   padding: 1em;
 }

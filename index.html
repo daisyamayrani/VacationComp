@@ -27,14 +27,31 @@
 
 
 
-    <div id="image-row" class="imageRow">
-      <img class="imageRow__img" src="https://images.unsplash.com/photo-1519659085987-2e3c6dc45f3c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1359&q=80 ">
-      <div class="imageRow__textArea">
-        <h4 class="imageRow__textArea__h4" >Explore the World with</h4>
-        <h1 class="imageRow__textArea__h1">Journey Ahead<h1>
-        <button class="imageRow__textArea__btn">
-          <a href="account.html">Book Now <i class="fas fa-angle-right"></i></a>
-        </button>
+    <div id="image-row" class="imageRow bgImg1">
+      <div class="imageRow__textArea d-inline-flex justify-content-around align-items-center">
+        <div>
+          <i class="fas fa-chevron-left imgArrow" onclick="displayImgRight()"></i>
+        </div>
+
+        <div class="imageRow__textArea__center">
+          <h4 class="imageRow__textArea__center__h4" >Explore the World with</h4>
+          <h1 class="imageRow__textArea__center__h1">Journey Ahead</h1>
+          <button class="imageRow__textArea__center__btn">
+            <a href="account.html">Book Now <i class="fas fa-angle-right"></i></a>
+          </button>
+
+          <!-- will do JS to buttons after -->
+          <!-- <div class="imageRow__textArea__center__dotsMenu">
+            <i class="fas fa-circle " id="menuCircle"></i>
+            <i class="far fa-circle " id="menuCircle"></i>
+            <i class="far fa-circle " id="menuCircle"></i>
+            <i class="far fa-circle " id="menuCircle"></i>
+          </div> -->
+        </div>
+
+        <div onclick="displayImgLeft()">
+          <i class="fas fa-chevron-right imgArrow" ></i>
+        </div>
       </div>
     </div> <!-- end atmo-image-row-->
 
