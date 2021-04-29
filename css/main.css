@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather);
 html {
-  padding: 0 !important; }
+  padding: 0 !important;
+  max-width: 100%; }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -17,232 +18,235 @@ body {
   body .bgImg4 {
     background-image: url("https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1359&q=80 "); }
 
-body .headerStyle {
-  padding-top: 20px;
-  padding-bottom: 20px; }
-body h2 {
-  color: #ffd83b;
-  font-size: 3rem;
-  text-align: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  text-shadow: 1px 1px grey;
-  letter-spacing: 3px;
-  text-transform: uppercase; }
-body h3 {
-  font-size: 2rem;
-  color: #ffd83b;
-  text-transform: capitalize;
-  letter-spacing: 2px;
-  margin: auto;
-  text-shadow: 1px 1px grey;
-  width: auto; }
-body p {
-  color: #a4a4a4;
-  margin: auto;
-  width: 50%;
-  font-size: 14px;
-  line-height: 1.5; }
-body button {
-  color: white;
-  background: #ffd83b;
-  text-shadow: 1px 1px #323232;
-  font-size: 20px;
-  font-style: italic;
-  padding: 7px 13px;
-  display: block;
-  align-items: center;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  border-radius: 20px;
-  border: 1px solid #838383;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0, 0, 0, 0.02);
-  box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0, 0, 0, 0.02); }
-  body button:link {
-    color: white !important; }
-  body button:visited {
-    color: #cdad00; }
-  body button:hover {
-    color: white !important;
-    background-color: #004c66;
-    padding: 7px 15px; }
-  body button:active {
-    color: #323232; }
-body .topnavRow {
-  position: relative;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  margin-top: 0;
-  align-content: center;
-  padding: 8px 0;
-  text-align: right; }
-  body .topnavRow img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-    float: left;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    margin-left: 40px; }
-  body .topnavRow__topnavRight {
-    margin-right: 40px; }
-    body .topnavRow__topnavRight__a {
-      color: #323232;
-      display: inline-block;
-      text-align: center;
-      padding: 14px 16px;
-      font-size: 15px;
-      height: auto; }
-      body .topnavRow__topnavRight__a:link {
-        color: #323232; }
-      body .topnavRow__topnavRight__a:visited {
-        color: #323232; }
-      body .topnavRow__topnavRight__a:hover {
-        color: #838383;
-        font-style: italic;
-        text-decoration: none !important; }
-      body .topnavRow__topnavRight__a:active {
-        color: #323232; }
-    body .topnavRow__topnavRight a button {
-      color: white;
-      background: #ffd83b;
-      font-size: 12px;
-      padding: 8px 12px;
-      text-shadow: 1px 1px grey;
-      border: 1px solid #838383;
-      -webkit-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
-      -moz-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
-      box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48); }
-      body .topnavRow__topnavRight a button:link {
-        color: white; }
-      body .topnavRow__topnavRight a button:visited {
-        color: #cdad00; }
-      body .topnavRow__topnavRight a button:hover {
-        color: white;
-        background-color: #004c66; }
-      body .topnavRow__topnavRight a button:active {
-        color: #323232; }
-body .imageRow {
+body {
   max-width: 100%;
-  color: white;
-  max-height: 80vh;
-  object-fit: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; }
-  body .imageRow__textArea {
-    width: 100%;
-    height: 80vh;
+  box-sizing: border-box; }
+  body .headerStyle {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  body h2 {
+    color: #ffd83b;
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
     margin-left: auto;
-    margin-right: auto; }
-    body .imageRow__textArea .imgArrow {
-      font-size: 2.8rem; }
-    body .imageRow__textArea__center {
-      text-align: center; }
-      body .imageRow__textArea__center__h4 {
-        font-size: 15px;
-        letter-spacing: 3.5px;
-        text-shadow: 1px 1px #323232; }
-      body .imageRow__textArea__center__h1 {
-        font-size: 5rem;
-        text-transform: uppercase;
-        letter-spacing: 6px;
-        text-shadow: 2px 2px #323232;
-        width: auto; }
-      body .imageRow__textArea__center__btn a {
-        color: white; }
-      body .imageRow__textArea__center__dotsMenu {
-        margin-top: 5rem; }
-        body .imageRow__textArea__center__dotsMenu .fa-circle {
-          margin-left: 0.5rem;
-          font-size: 1rem; }
-    body .imageRow__textArea .imgArrow {
-      text-shadow: 1px 1px grey; }
-      body .imageRow__textArea .imgArrow:hover {
-        color: #a4a4a4; }
-body .introRow {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  width: 100%;
-  text-align: center;
-  margin: 49px auto 62px auto; }
-  body .introRow__h3 {
-    font-family: cursive;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px grey;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+  body h3 {
+    font-size: 2rem;
+    color: #ffd83b;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin: auto;
+    text-shadow: 1px 1px grey;
+    width: auto; }
+  body p {
+    color: #a4a4a4;
+    margin: auto;
+    width: 50%;
+    font-size: 14px;
+    line-height: 1.5; }
+  body button {
+    color: white;
+    background: #ffd83b;
+    text-shadow: 1px 1px #323232;
+    font-size: 20px;
     font-style: italic;
-    font-size: 4rem;
-    text-shadow: 2px 2px grey;
-    padding-bottom: 12px; }
-  body .introRow__p {
-    font-size: 18px; }
-body .guidedRow {
-  width: 100%;
-  text-align: center;
-  margin: 49px auto 62px auto; }
-body .picLinkRow {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  position: relative; }
-  body .picLinkRow__imgArea {
+    padding: 7px 13px;
+    display: block;
+    align-items: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 20px;
+    border: 1px solid #838383;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0, 0, 0, 0.02);
+    box-shadow: 0px 10px 13px -7px #000000, 43px -37px 16px 3px rgba(0, 0, 0, 0.02); }
+    body button:link {
+      color: white !important; }
+    body button:visited {
+      color: #cdad00; }
+    body button:hover {
+      color: white !important;
+      background-color: #004c66;
+      padding: 7px 15px; }
+    body button:active {
+      color: #323232; }
+  body .topnavRow {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    align-content: center;
+    padding: 8px 0;
+    text-align: right; }
+    body .topnavRow img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      float: left;
+      padding-left: 20px;
+      padding-bottom: 10px;
+      margin-left: 40px; }
+    body .topnavRow__topnavRight {
+      margin-right: 40px; }
+      body .topnavRow__topnavRight__a {
+        color: #323232;
+        display: inline-block;
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 15px;
+        height: auto; }
+        body .topnavRow__topnavRight__a:link {
+          color: #323232; }
+        body .topnavRow__topnavRight__a:visited {
+          color: #323232; }
+        body .topnavRow__topnavRight__a:hover {
+          color: #838383;
+          font-style: italic;
+          text-decoration: none !important; }
+        body .topnavRow__topnavRight__a:active {
+          color: #323232; }
+      body .topnavRow__topnavRight a button {
+        color: white;
+        background: #ffd83b;
+        font-size: 12px;
+        padding: 8px 12px;
+        text-shadow: 1px 1px grey;
+        border: 1px solid #838383;
+        -webkit-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
+        -moz-box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48);
+        box-shadow: 16px 10px 16px -3px rgba(0, 0, 0, 0.48); }
+        body .topnavRow__topnavRight a button:link {
+          color: white; }
+        body .topnavRow__topnavRight a button:visited {
+          color: #cdad00; }
+        body .topnavRow__topnavRight a button:hover {
+          color: white;
+          background-color: #004c66; }
+        body .topnavRow__topnavRight a button:active {
+          color: #323232; }
+  body .imageRow {
+    max-width: 100%;
+    color: white;
+    max-height: 80vh;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+    body .imageRow__textArea {
+      max-width: 100%;
+      min-width: 100%;
+      height: 80vh;
+      margin-left: auto;
+      margin-right: auto; }
+      body .imageRow__textArea__secArrow__imgArrow {
+        font-size: 2.8rem;
+        text-shadow: 1px 1px grey; }
+        body .imageRow__textArea__secArrow__imgArrow:hover {
+          color: #a4a4a4; }
+      body .imageRow__textArea__center {
+        text-align: center; }
+        body .imageRow__textArea__center__h4 {
+          font-size: 15px;
+          letter-spacing: 3.5px;
+          text-shadow: 1px 1px #323232; }
+        body .imageRow__textArea__center__h1 {
+          font-size: 5rem;
+          text-transform: uppercase;
+          letter-spacing: 6px;
+          text-shadow: 2px 2px #323232;
+          width: auto; }
+        body .imageRow__textArea__center__btn a {
+          color: white; }
+        body .imageRow__textArea__center__dotsMenu {
+          margin-top: 5rem; }
+          body .imageRow__textArea__center__dotsMenu .fa-circle {
+            margin-left: 0.5rem;
+            font-size: 1rem; }
+  body .introRow {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    text-align: center;
+    margin: 49px auto 62px auto; }
+    body .introRow__h3 {
+      font-family: cursive;
+      font-style: italic;
+      font-size: 4rem;
+      text-shadow: 2px 2px grey;
+      padding-bottom: 12px; }
+    body .introRow__p {
+      font-size: 18px; }
+  body .guidedRow {
+    width: 100%;
+    text-align: center;
+    margin: 49px auto 62px auto; }
+  body .picLinkRow {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: relative; }
+    body .picLinkRow__imgArea {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      body .picLinkRow__imgArea__singleImg {
+        padding: 10px 50px 50px;
+        position: relative; }
+        body .picLinkRow__imgArea__singleImg__icons {
+          height: 450px;
+          width: 450px;
+          -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
+          -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
+          box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
+          position: relative; }
+        body .picLinkRow__imgArea__singleImg__textArea {
+          position: absolute;
+          bottom: 50px;
+          left: 70px; }
+          body .picLinkRow__imgArea__singleImg__textArea h5 {
+            color: white;
+            letter-spacing: 0.8px;
+            font-size: 14px;
+            margin-bottom: 6px;
+            text-shadow: 1px 1px grey; }
+          body .picLinkRow__imgArea__singleImg__textArea h3 {
+            color: #ffd83b;
+            letter-spacing: 1px;
+            font-size: 15px;
+            margin-top: 6px;
+            margin-bottom: 18px;
+            text-transform: uppercase;
+            text-shadow: 1px 1px grey; }
+  body .onboardRow {
+    width: 100%;
+    text-align: center;
+    margin: 49px auto 62px auto;
+    height: auto; }
+  body .boatImagesRow__imgArea {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center; }
-    body .picLinkRow__imgArea__singleImg {
-      padding: 10px 50px 50px;
-      position: relative; }
-      body .picLinkRow__imgArea__singleImg__icons {
-        height: 450px;
-        width: 450px;
+    body .boatImagesRow__imgArea__singleImg {
+      padding: 10px 50px 50px; }
+      body .boatImagesRow__imgArea__singleImg__icons {
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+        border: solid 1px grey;
         -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
         -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
-        box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
-        position: relative; }
-      body .picLinkRow__imgArea__singleImg__textArea {
-        position: absolute;
-        bottom: 50px;
-        left: 70px; }
-        body .picLinkRow__imgArea__singleImg__textArea h5 {
-          color: white;
-          letter-spacing: 0.8px;
-          font-size: 14px;
-          margin-bottom: 6px;
-          text-shadow: 1px 1px grey; }
-        body .picLinkRow__imgArea__singleImg__textArea h3 {
-          color: #ffd83b;
-          letter-spacing: 1px;
-          font-size: 15px;
-          margin-top: 6px;
-          margin-bottom: 18px;
-          text-transform: uppercase;
-          text-shadow: 1px 1px grey; }
-body .onboardRow {
-  width: 100%;
-  text-align: center;
-  margin: 49px auto 62px auto;
-  height: auto; }
-body .boatImagesRow__imgArea {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-  body .boatImagesRow__imgArea__singleImg {
-    padding: 10px 50px 50px; }
-    body .boatImagesRow__imgArea__singleImg__icons {
-      height: 300px;
-      width: 300px;
-      border-radius: 10px;
-      border: solid 1px grey;
-      -webkit-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
-      -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
-      box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57); }
+        box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57); }
 
 .footer {
   background: #838383;
@@ -310,19 +314,22 @@ body .boatImagesRow__imgArea {
           display: none !important; }
 
   .imageRow {
-    width: 100%;
     height: 100vh !important; }
-    .imageRow__img {
-      height: 100vh !important; }
-    .imageRow__textArea__h1 {
-      font-size: 3rem !important; }
-    .imageRow__textArea__btn {
-      color: white;
-      background: #ffd83b;
-      font-size: 20px;
-      font-style: italic;
-      padding: 7px 13px;
-      text-shadow: 1px 1px grey; }
+    .imageRow__textArea {
+      max-width: 70%;
+      display: relative;
+      object-fit: contain; }
+      .imageRow__textArea__h1 {
+        font-size: 2rem !important; }
+      .imageRow__textArea__btn {
+        color: white;
+        background: #ffd83b;
+        font-size: 20px;
+        font-style: italic;
+        padding: 7px 13px;
+        text-shadow: 1px 1px grey; }
+      .imageRow__textArea__secArrow {
+        display: none; }
 
   .picLinkRow {
     margin-left: auto !important;
