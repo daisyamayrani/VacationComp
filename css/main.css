@@ -507,36 +507,42 @@ form {
 #diff-tours-row {
   margin: 0;
   padding: 0;
-  width: 100%;
+  max-width: 80%;
   position: relative;
   margin-left: auto;
   margin-right: auto; }
   #diff-tours-row .wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
-    grid-auto-rows: minmax(600px, auto);
     padding-bottom: 60px;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto; }
     #diff-tours-row .wrapper .tour-item {
+      height: auto;
       border-radius: 10px;
       -webkit-box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43);
       -moz-box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43);
       box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43); }
       #diff-tours-row .wrapper .tour-item .pic-area {
         width: auto;
-        height: 60%;
-        position: static; }
+        height: 55%;
+        position: relative; }
         #diff-tours-row .wrapper .tour-item .pic-area img {
           width: 100%;
-          height: 100%;
+          height: 360px;
           object-fit: cover;
           border-radius: 10px 10px 0 0; }
+        #diff-tours-row .wrapper .tour-item .pic-area button {
+          font-size: 1rem;
+          border-radius: 10%;
+          padding: 8px;
+          position: absolute;
+          bottom: 15px;
+          right: 15px; }
       #diff-tours-row .wrapper .tour-item .text-area {
         object-fit: contain;
-        height: 40%;
+        height: 45%;
         padding-left: 10px;
         color: grey;
         background-color: #fbfbf8;
@@ -545,8 +551,10 @@ form {
           color: #323232;
           letter-spacing: 1.5px;
           font-family: Poppins, cursive;
-          font-weight: bold; }
+          font-weight: bold;
+          padding-top: 20px; }
         #diff-tours-row .wrapper .tour-item .text-area p {
+          font-size: 0.9rem;
           width: 100%;
           color: grey;
           margin: 0;
@@ -560,15 +568,9 @@ form {
             line-height: 1.2;
             color: inherit;
             padding-left: 10px; }
-        #diff-tours-row .wrapper .tour-item .text-area .title {
-          padding-top: 20px; }
         #diff-tours-row .wrapper .tour-item .text-area .price,
         #diff-tours-row .wrapper .tour-item .text-area .duration {
           font-style: italic; }
-        #diff-tours-row .wrapper .tour-item .text-area button {
-          position: absolute;
-          bottom: 15px;
-          right: 15px; }
     #diff-tours-row .wrapper .one {
       grid-column: 1 / 2;
       grid-row: 1 / 2; }

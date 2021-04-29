@@ -1,127 +1,179 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Journey Ahead</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,800" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.0/css/all.css"
+      integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,800"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
-
     <!--Navigation bar-->
-    <div id="topnav-row">
-    </div>
+    <div id="topnav-row"></div>
 
     <script>
-      $(function(){
+      $(function () {
         $("#topnav-row").load("nav.html");
       });
     </script>
     <!--end of Navigation bar-->
 
-
     <div class="headerStyle">
       <h2>Tours</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
     </div>
 
-    <div id="diff-tours-row" class="container">
-      <div class="wrapper d-flex">
+    <div id="diff-tours-row" class="container-fluid">
+      <div class="wrapper d-flex flex-wrap justify-content-center">
         <div class="one tour-item">
           <div class="pic-area">
-            <img class="photo" src="https://source.unsplash.com/325x360?ocean-diving">
+            <img
+              class="photo"
+              src="https://source.unsplash.com/325x360?ocean-diving"
+            />
+            <button type="button" name="button">
+              <i class="fas fa-cart-plus"></i>
+            </button>
           </div>
           <div class="text-area">
             <h5 class="title">Deep Diving</h5>
             <p class="price">PRICE FROM: <span>$4587</span></p>
-            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p class="duration">DURATION: <span>1 Hour</span> </p>
-            <button type="button" name="button">Add to Cart</button>
+            <p class="discription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p class="duration">DURATION: <span>1 Hour</span></p>
           </div>
         </div>
         <div class="two tour-item">
           <div class="pic-area">
-            <img class="photo" src="https://source.unsplash.com/325x360?vineyards">
+            <img
+              class="photo"
+              src="https://source.unsplash.com/325x360?vineyards"
+            />
+            <button type="button" name="button">
+              <i class="fas fa-cart-plus"></i>
+            </button>
           </div>
           <div class="text-area">
             <h5 class="title">Vineyard Tour</h5>
             <p class="price">PRICE FROM: <span>$454</span></p>
-            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p class="duration">DURATION: <span>3 Hour</span> </p>
-            <button type="button" name="button">Add to Cart</button>
+            <p class="discription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p class="duration">DURATION: <span>3 Hour</span></p>
           </div>
         </div>
         <div class="three tour-item">
           <div class="pic-area">
-            <img class="photo" src="https://source.unsplash.com/325x360?bungee-jumping">
+            <img
+              class="photo"
+              src="https://source.unsplash.com/325x360?bungee-jumping"
+            />
+            <button type="button" name="button">
+              <i class="fas fa-cart-plus"></i>
+            </button>
           </div>
           <div class="text-area">
             <h5 class="title">Bungee Jumping</h5>
             <p class="price">PRICE FROM: <span>$500</span></p>
-            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p class="duration">DURATION: <span>1 Hour</span> </p>
-            <button type="button" name="button">Add to Cart</button>
+            <p class="discription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p class="duration">DURATION: <span>1 Hour</span></p>
           </div>
         </div>
         <div class="four tour-item">
           <div class="pic-area">
-            <img class="photo" src="https://source.unsplash.com/325x360?snow-boarding">
+            <img
+              class="photo"
+              src="https://source.unsplash.com/325x360?snow-boarding"
+            />
+            <button type="button" name="button">
+              <i class="fas fa-cart-plus"></i>
+            </button>
           </div>
           <div class="text-area">
             <h5 class="title">Snow Boarding</h5>
             <p class="price">PRICE FROM: <span>$608</span></p>
-            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p class="duration">DURATION: <span>5 Hour</span> </p>
-            <button type="button" name="button">Add to Cart</button>
+            <p class="discription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p class="duration">DURATION: <span>5 Hour</span></p>
           </div>
         </div>
         <div class="five tour-item">
           <div class="pic-area">
-            <img class="photo" src="https://source.unsplash.com/325x360?cruise">
+            <img
+              class="photo"
+              src="https://source.unsplash.com/325x360?cruise"
+            />
+            <button type="button" name="button">
+              <i class="fas fa-cart-plus"></i>
+            </button>
           </div>
           <div class="text-area">
             <h5 class="title">Cruise</h5>
             <p class="price">PRICE FROM: <span>$5000</span></p>
-            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p class="duration">DURATION: <span>3 Days</span> </p>
-            <button type="button" name="button">Add to Cart</button>
+            <p class="discription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p class="duration">DURATION: <span>3 Days</span></p>
           </div>
         </div>
         <div class="six tour-item">
           <div class="pic-area">
-            <img class="photo" src="https://source.unsplash.com/325x360?safari">
+            <img
+              class="photo"
+              src="https://source.unsplash.com/325x360?safari"
+            />
+            <button type="button" name="button">
+              <i class="fas fa-cart-plus"></i>
+            </button>
           </div>
           <div class="text-area">
             <h5 class="title">Safari Tour</h5>
             <p class="price">PRICE FROM: <span>$250</span></p>
-            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p class="duration">DURATION: <span>2 Hour</span> </p>
-            <button type="button" name="button">Add to Cart</button>
+            <p class="discription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p class="duration">DURATION: <span>2 Hour</span></p>
           </div>
         </div>
       </div>
-
-
     </div>
 
-
-
-
     <!--Footer-->
-    <footer>
-    </footer>
+    <footer></footer>
 
     <script>
-      $(function(){
+      $(function () {
         $("footer").load("footer.html");
       });
     </script>
     <!--end of Footer-->
-
-
   </body>
 </html>
