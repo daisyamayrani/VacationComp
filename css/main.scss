@@ -241,7 +241,7 @@ body {
           -moz-box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
           box-shadow: 10px 10px 5px 1px rgba(0, 0, 0, 0.57);
           position: relative;
-        } // end icons
+        }
         &__textArea {
           position: absolute;
           bottom: 50px;
@@ -675,13 +675,14 @@ form {
       -moz-box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43);
       box-shadow: 6px 25px 32px -6px rgba(0, 0, 0, 0.43);
       .pic-area {
-        width: auto;
+        width: 360px;
         height: 55%;
         position: relative;
-        img {
-          width: 100%;
+        .photo {
+          max-width: 100%;
           height: 360px;
           object-fit: cover;
+          object-position: center;
           border-radius: 10px 10px 0 0;
         }
         button {
@@ -694,12 +695,15 @@ form {
         }
       }
       .text-area {
+        border-top: 2px solid $skyDarkBlue;
         object-fit: contain;
+        width: 360px;
         height: 45%;
         padding-left: 10px;
         color: grey;
         background-color: $offWhite;
         position: relative;
+        border-radius: 0 0 10px 10px;
         h5 {
           color: $black;
           letter-spacing: 1.5px;
